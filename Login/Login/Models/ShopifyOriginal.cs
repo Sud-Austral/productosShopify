@@ -12,10 +12,9 @@ namespace Login.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Productos6
+    public partial class ShopifyOriginal
     {
-        public Nullable<long> level_0 { get; set; }
-        public long index { get; set; }
+        public Nullable<long> index { get; set; }
         public string Handle { get; set; }
         public string Title { get; set; }
         public string Body__HTML_ { get; set; }
@@ -36,33 +35,34 @@ namespace Login.Models
         public string Variant_Inventory_Policy { get; set; }
         public string Variant_Fulfillment_Service { get; set; }
         public Nullable<double> Variant_Price { get; set; }
-        public string Variant_Compare_At_Price { get; set; }
+        public Nullable<double> Variant_Compare_At_Price { get; set; }
         public Nullable<bool> Variant_Requires_Shipping { get; set; }
         public Nullable<bool> Variant_Taxable { get; set; }
-        public string Variant_Barcode { get; set; }
+        public Nullable<double> Variant_Barcode { get; set; }
         public string Image_Src { get; set; }
         public Nullable<double> Image_Position { get; set; }
-        public string Image_Alt_Text { get; set; }
+        public Nullable<double> Image_Alt_Text { get; set; }
         public Nullable<bool> Gift_Card { get; set; }
-        public string SEO_Title { get; set; }
-        public string SEO_Description { get; set; }
-        public string Google_Shopping___Google_Product_Category { get; set; }
-        public string Google_Shopping___Gender { get; set; }
-        public string Google_Shopping___Age_Group { get; set; }
-        public string Google_Shopping___MPN { get; set; }
-        public string Google_Shopping___AdWords_Grouping { get; set; }
-        public string Google_Shopping___AdWords_Labels { get; set; }
-        public string Google_Shopping___Condition { get; set; }
-        public string Google_Shopping___Custom_Product { get; set; }
-        public string Google_Shopping___Custom_Label_0 { get; set; }
-        public string Google_Shopping___Custom_Label_1 { get; set; }
-        public string Google_Shopping___Custom_Label_2 { get; set; }
-        public string Google_Shopping___Custom_Label_3 { get; set; }
-        public string Google_Shopping___Custom_Label_4 { get; set; }
-        public string Variant_Image { get; set; }
+        public Nullable<double> SEO_Title { get; set; }
+        public Nullable<double> SEO_Description { get; set; }
+        public Nullable<double> Google_Shopping___Google_Product_Category { get; set; }
+        public Nullable<double> Google_Shopping___Gender { get; set; }
+        public Nullable<double> Google_Shopping___Age_Group { get; set; }
+        public Nullable<double> Google_Shopping___MPN { get; set; }
+        public Nullable<double> Google_Shopping___AdWords_Grouping { get; set; }
+        public Nullable<double> Google_Shopping___AdWords_Labels { get; set; }
+        public Nullable<double> Google_Shopping___Condition { get; set; }
+        public Nullable<double> Google_Shopping___Custom_Product { get; set; }
+        public Nullable<double> Google_Shopping___Custom_Label_0 { get; set; }
+        public Nullable<double> Google_Shopping___Custom_Label_1 { get; set; }
+        public Nullable<double> Google_Shopping___Custom_Label_2 { get; set; }
+        public Nullable<double> Google_Shopping___Custom_Label_3 { get; set; }
+        public Nullable<double> Google_Shopping___Custom_Label_4 { get; set; }
+        public Nullable<double> Variant_Image { get; set; }
         public string Variant_Weight_Unit { get; set; }
-        public string Variant_Tax_Code { get; set; }
-        public string Cost_per_item { get; set; }
+        public Nullable<double> Variant_Tax_Code { get; set; }
+        public Nullable<double> Cost_per_item { get; set; }
         public string Status { get; set; }
+        public int id { get; set; }
     }
 }

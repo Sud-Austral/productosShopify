@@ -5,67 +5,266 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="listaProductosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="Productos4">
+        <EntityType Name="BD">
           <Key>
-            <PropertyRef Name="index" />
+            <PropertyRef Name="id" />
           </Key>
-          <Property Name="hola" Type="bigint" />
-          <Property Name="index" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Handle" Type="varchar(max)" />
-          <Property Name="Title" Type="varchar(max)" />
-          <Property Name="Body (HTML)" Type="varchar(max)" />
-          <Property Name="Vendor" Type="varchar(max)" />
-          <Property Name="Type" Type="varchar(max)" />
-          <Property Name="Tags" Type="varchar(max)" />
-          <Property Name="Published" Type="bit" />
-          <Property Name="Option1 Name" Type="varchar(max)" />
-          <Property Name="Option1 Value" Type="varchar(max)" />
-          <Property Name="Option2 Name" Type="varchar(max)" />
-          <Property Name="Option2 Value" Type="varchar(max)" />
-          <Property Name="Option3 Name" Type="varchar(max)" />
-          <Property Name="Option3 Value" Type="varchar(max)" />
-          <Property Name="Variant SKU" Type="varchar(max)" />
-          <Property Name="Variant Grams" Type="float" />
-          <Property Name="Variant Inventory Tracker" Type="varchar(max)" />
-          <Property Name="Variant Inventory Qty" Type="float" />
-          <Property Name="Variant Inventory Policy" Type="varchar(max)" />
-          <Property Name="Variant Fulfillment Service" Type="varchar(max)" />
-          <Property Name="Variant Price" Type="float" />
-          <Property Name="Variant Compare At Price" Type="varchar(max)" />
-          <Property Name="Variant Requires Shipping" Type="bit" />
-          <Property Name="Variant Taxable" Type="bit" />
-          <Property Name="Variant Barcode" Type="varchar(max)" />
-          <Property Name="Image Src" Type="varchar(max)" />
-          <Property Name="Image Position" Type="float" />
-          <Property Name="Image Alt Text" Type="varchar(max)" />
-          <Property Name="Gift Card" Type="bit" />
-          <Property Name="SEO Title" Type="varchar(max)" />
-          <Property Name="SEO Description" Type="varchar(max)" />
-          <Property Name="Google Shopping / Google Product Category" Type="varchar(max)" />
-          <Property Name="Google Shopping / Gender" Type="varchar(max)" />
-          <Property Name="Google Shopping / Age Group" Type="varchar(max)" />
-          <Property Name="Google Shopping / MPN" Type="varchar(max)" />
-          <Property Name="Google Shopping / AdWords Grouping" Type="varchar(max)" />
-          <Property Name="Google Shopping / AdWords Labels" Type="varchar(max)" />
-          <Property Name="Google Shopping / Condition" Type="varchar(max)" />
-          <Property Name="Google Shopping / Custom Product" Type="varchar(max)" />
-          <Property Name="Google Shopping / Custom Label 0" Type="varchar(max)" />
-          <Property Name="Google Shopping / Custom Label 1" Type="varchar(max)" />
-          <Property Name="Google Shopping / Custom Label 2" Type="varchar(max)" />
-          <Property Name="Google Shopping / Custom Label 3" Type="varchar(max)" />
-          <Property Name="Google Shopping / Custom Label 4" Type="varchar(max)" />
-          <Property Name="Variant Image" Type="varchar(max)" />
-          <Property Name="Variant Weight Unit" Type="varchar(max)" />
-          <Property Name="Variant Tax Code" Type="varchar(max)" />
-          <Property Name="Cost per item" Type="varchar(max)" />
-          <Property Name="Status" Type="varchar(max)" />
+          <Property Name="index" Type="bigint" />
+          <Property Name="Unnamed: 0" Type="float" />
+          <Property Name="Data" Type="varchar(max)" />
+          <Property Name="Estado" Type="varchar(max)" />
+          <Property Name="Fecha Actualización " Type="datetime" />
+          <Property Name="Responsable" Type="varchar(max)" />
+          <Property Name="Tema" Type="varchar(max)" />
+          <Property Name="Observación " Type="varchar(max)" />
+          <Property Name="Acción" Type="varchar(max)" />
+          <Property Name="Monitoreo" Type="varchar(max)" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
-        <EntityType Name="Productos6">
+        <EntityType Name="Datas">
           <Key>
-            <PropertyRef Name="index" />
+            <PropertyRef Name="id" />
           </Key>
-          <Property Name="level_0" Type="bigint" />
-          <Property Name="index" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="index" Type="bigint" />
+          <Property Name="Unnamed: 0" Type="float" />
+          <Property Name="Data" Type="varchar(max)" />
+          <Property Name="id_data" Type="bigint" />
+          <Property Name="Estado" Type="varchar(max)" />
+          <Property Name="Desarrollo" Type="varchar(max)" />
+          <Property Name="Investigación" Type="varchar(max)" />
+          <Property Name="Breve Descripción" Type="varchar(max)" />
+          <Property Name="Slogan - Cita" Type="varchar(max)" />
+          <Property Name="Vistas" Type="varchar(max)" />
+          <Property Name="Repositorio Dropbox" Type="varchar(max)" />
+          <Property Name="Link Logo" Type="varchar(max)" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Detalle_Productos">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="bigint" />
+          <Property Name="Unnamed: 0" Type="float" />
+          <Property Name="Data" Type="varchar(max)" />
+          <Property Name="id_producto" Type="varchar(max)" />
+          <Property Name="Plazo Producto" Type="varchar(max)" />
+          <Property Name="Producto" Type="varchar(max)" />
+          <Property Name="Secciones" Type="varchar(max)" />
+          <Property Name="Sub-secciones" Type="varchar(max)" />
+          <Property Name="Variables" Type="varchar(max)" />
+          <Property Name="Fuente" Type="varchar(max)" />
+          <Property Name="Situación Variable" Type="varchar(max)" />
+          <Property Name="Fecha Actualización" Type="datetime" />
+          <Property Name="Observaciones" Type="float" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Investigacio">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="bigint" />
+          <Property Name="N°" Type="bigint" />
+          <Property Name="Tema Investigación " Type="varchar(max)" />
+          <Property Name="Responsables " Type="varchar(max)" />
+          <Property Name="Fecha inicio" Type="datetime" />
+          <Property Name="Estado" Type="varchar(max)" />
+          <Property Name="Fecha Termino" Type="datetime" />
+          <Property Name="Chile" Type="varchar(max)" />
+          <Property Name="Panamá " Type="varchar(max)" />
+          <Property Name="Guatemala" Type="varchar(max)" />
+          <Property Name="Honduras" Type="varchar(max)" />
+          <Property Name="El Salvador" Type="varchar(max)" />
+          <Property Name="Link 1" Type="varchar(max)" />
+          <Property Name="Link 2" Type="varchar(max)" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Monitoreo_Invest">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="bigint" />
+          <Property Name="N°" Type="float" />
+          <Property Name="Tema/institución Investigación " Type="varchar(max)" />
+          <Property Name="Responsable" Type="varchar(max)" />
+          <Property Name="Fecha inicio" Type="datetime" />
+          <Property Name="Fecha avance" Type="datetime" />
+          <Property Name="Fecha Termino" Type="datetime" />
+          <Property Name="Comentario" Type="varchar(max)" />
+          <Property Name="Acción" Type="varchar(max)" />
+          <Property Name="Seguimiento" Type="varchar(max)" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Paises">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="bigint" />
+          <Property Name="Unnamed: 0" Type="float" />
+          <Property Name="País" Type="varchar(max)" />
+          <Property Name="id_país" Type="bigint" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Personas">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="bigint" />
+          <Property Name="Unnamed: 0" Type="float" />
+          <Property Name="Nombre" Type="varchar(max)" />
+          <Property Name="Apellido" Type="varchar(max)" />
+          <Property Name="Nombre Completo" Type="varchar(max)" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Prioridad">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="bigint" />
+          <Property Name="Unnamed: 0" Type="float" />
+          <Property Name="Data" Type="varchar(max)" />
+          <Property Name="Producto Previos" Type="varchar(max)" />
+          <Property Name="Secuencia" Type="float" />
+          <Property Name="País" Type="varchar(max)" />
+          <Property Name="Integrado_PRODUCTOS" Type="varchar(max)" />
+          <Property Name="id_producto" Type="varchar(max)" />
+          <Property Name="Prioridad" Type="float" />
+          <Property Name="Estado" Type="varchar(max)" />
+          <Property Name="Avance" Type="float" />
+          <Property Name="Responsable Desarrollo" Type="varchar(max)" />
+          <Property Name="Responsable Información" Type="varchar(max)" />
+          <Property Name="Tecnología" Type="varchar(max)" />
+          <Property Name="Tareas/Elementos" Type="varchar(max)" />
+          <Property Name="Columna1" Type="float" />
+          <Property Name="Tecnología2" Type="varchar(max)" />
+          <Property Name="Fecha estimada" Type="float" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Fecha_Actualizacion" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Productos">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="bigint" />
+          <Property Name="id_data" Type="bigint" />
+          <Property Name="id_pais" Type="bigint" />
+          <Property Name="Corr_Producto" Type="bigint" />
+          <Property Name="Data" Type="varchar(max)" />
+          <Property Name="País" Type="varchar(max)" />
+          <Property Name="id_producto" Type="varchar(max)" />
+          <Property Name="Producto asociado " Type="varchar(max)" />
+          <Property Name="Nombre comercial" Type="varchar(max)" />
+          <Property Name="Estado" Type="varchar(max)" />
+          <Property Name="Avance" Type="float" />
+          <Property Name="Responsable Desarrollo" Type="varchar(max)" />
+          <Property Name="Responsable Información" Type="varchar(max)" />
+          <Property Name="Tecnología" Type="varchar(max)" />
+          <Property Name="Host " Type="varchar(max)" />
+          <Property Name="Link Odoo" Type="varchar(max)" />
+          <Property Name="Fecha Publicación" Type="float" />
+          <Property Name="Escala " Type="varchar(max)" />
+          <Property Name="Periodo" Type="varchar(max)" />
+          <Property Name="Actualizaciones" Type="varchar(max)" />
+          <Property Name="Tipo Producto" Type="varchar(max)" />
+          <Property Name="Fuentes " Type="varchar(max)" />
+          <Property Name="Ref principal " Type="varchar(max)" />
+          <Property Name="Competencia o material vinculado " Type="varchar(max)" />
+          <Property Name="Vistas" Type="varchar(max)" />
+          <Property Name="Repositorio Dropbox" Type="varchar(max)" />
+          <Property Name="Link Logo" Type="varchar(max)" />
+          <Property Name="Observaciones" Type="float" />
+          <Property Name="Miniatura" Type="varchar(max)" />
+          <Property Name="PORTADA SHOPIFY" Type="varchar(max)" />
+          <Property Name="Párrafo enganche" Type="varchar(max)" />
+          <Property Name="Variante_1" Type="varchar(max)" />
+          <Property Name="Precio_1 (USD)" Type="float" />
+          <Property Name="Variante_2" Type="varchar(max)" />
+          <Property Name="Precio_2 (USD)" Type="float" />
+          <Property Name="Variante_3" Type="varchar(max)" />
+          <Property Name="Precio_3 (USD)" Type="float" />
+          <Property Name="Variable_filtro1" Type="float" />
+          <Property Name="Variable_filtro2" Type="float" />
+          <Property Name="Variable_filtro3" Type="float" />
+          <Property Name="Descripción (Indicar qué permite ver o hacer el producto) 2" Type="varchar(max)" />
+          <Property Name="CAR_Tipo_Prod" Type="varchar(max)" />
+          <Property Name="CAR_Var1_Disponible" Type="varchar(max)" />
+          <Property Name="CAR_Var2_Disponible" Type="varchar(max)" />
+          <Property Name="CAR_Var3_Disponible" Type="varchar(max)" />
+          <Property Name="CAR_Periodo" Type="varchar(max)" />
+          <Property Name="CAR_Proveedor" Type="varchar(max)" />
+          <Property Name="CAR_Colección" Type="varchar(max)" />
+          <Property Name="ESP_Tecnología" Type="varchar(max)" />
+          <Property Name="ESP_Incluye" Type="varchar(max)" />
+          <Property Name="ESP_Uso_Disp." Type="varchar(max)" />
+          <Property Name="ESP_Fuentes " Type="varchar(max)" />
+          <Property Name="ACC_Recibirás" Type="varchar(max)" />
+          <Property Name="ACC_Licencia_uso" Type="varchar(max)" />
+          <Property Name="ACC_Actualizaciones" Type="varchar(max)" />
+          <Property Name="ACC_N°_usuarios" Type="float" />
+          <Property Name="Etiquetas" Type="varchar(max)" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Shopify">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="bigint" />
+          <Property Name="id_data" Type="bigint" />
+          <Property Name="Corr_Producto" Type="bigint" />
+          <Property Name="Data" Type="varchar(max)" />
+          <Property Name="id_producto" Type="varchar(max)" />
+          <Property Name="Producto asociado " Type="varchar(max)" />
+          <Property Name="Nombre comercial" Type="varchar(max)" />
+          <Property Name="Variante" Type="float" />
+          <Property Name="Corr_variante" Type="float" />
+          <Property Name="id_prod_var" Type="float" />
+          <Property Name="Estado" Type="varchar(max)" />
+          <Property Name="Avance" Type="float" />
+          <Property Name="Responsable Desarrollo" Type="varchar(max)" />
+          <Property Name="Responsable Información" Type="varchar(max)" />
+          <Property Name="PORTADA SHOPIFY" Type="varchar(max)" />
+          <Property Name="Párrafo enganche" Type="varchar(max)" />
+          <Property Name="Variante_1" Type="varchar(max)" />
+          <Property Name="Precio_1" Type="float" />
+          <Property Name="Variante_2" Type="varchar(max)" />
+          <Property Name="Precio_2" Type="float" />
+          <Property Name="Variante_3" Type="varchar(max)" />
+          <Property Name="Precio_3" Type="float" />
+          <Property Name="Variable_filtro1" Type="float" />
+          <Property Name="Variable_filtro2" Type="float" />
+          <Property Name="Variable_filtro3" Type="float" />
+          <Property Name="Descripción (Indicar qué permite ver o hacer el producto) " Type="varchar(max)" />
+          <Property Name="CAR_Tipo_Prod" Type="varchar(max)" />
+          <Property Name="CAR_Var1_Disponible" Type="varchar(max)" />
+          <Property Name="CAR_Periodo" Type="varchar(max)" />
+          <Property Name="CAR_Proveedor" Type="varchar(max)" />
+          <Property Name="CAR_Colección" Type="varchar(max)" />
+          <Property Name="ESP_Tecnología" Type="varchar(max)" />
+          <Property Name="Host " Type="varchar(max)" />
+          <Property Name="Link Odoo" Type="varchar(max)" />
+          <Property Name="Fecha Publicación" Type="float" />
+          <Property Name="País" Type="varchar(max)" />
+          <Property Name="Escala " Type="varchar(max)" />
+          <Property Name="ESP_Periodo" Type="varchar(max)" />
+          <Property Name="ESP_Incluye" Type="varchar(max)" />
+          <Property Name="ESP_Uso_Disp." Type="varchar(max)" />
+          <Property Name="ESP_Fuentes " Type="varchar(max)" />
+          <Property Name="ACC_Recibirás" Type="varchar(max)" />
+          <Property Name="ACC_Licencia_uso" Type="varchar(max)" />
+          <Property Name="ACC_Actualizaciones" Type="varchar(max)" />
+          <Property Name="ACC_N°_usuarios" Type="float" />
+          <Property Name="Etiquetas" Type="varchar(max)" />
+          <Property Name="Vistas" Type="varchar(max)" />
+          <Property Name="Repositorio Dropbox" Type="varchar(max)" />
+          <Property Name="Link Logo" Type="varchar(max)" />
+          <Property Name="Observaciones" Type="float" />
+          <Property Name="Miniatura" Type="varchar(max)" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShopifyOriginal">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="bigint" />
           <Property Name="Handle" Type="varchar(max)" />
           <Property Name="Title" Type="varchar(max)" />
           <Property Name="Body (HTML)" Type="varchar(max)" />
@@ -86,108 +285,343 @@
           <Property Name="Variant Inventory Policy" Type="varchar(max)" />
           <Property Name="Variant Fulfillment Service" Type="varchar(max)" />
           <Property Name="Variant Price" Type="float" />
-          <Property Name="Variant Compare At Price" Type="varchar(max)" />
+          <Property Name="Variant Compare At Price" Type="float" />
           <Property Name="Variant Requires Shipping" Type="bit" />
           <Property Name="Variant Taxable" Type="bit" />
-          <Property Name="Variant Barcode" Type="varchar(max)" />
+          <Property Name="Variant Barcode" Type="float" />
           <Property Name="Image Src" Type="varchar(max)" />
           <Property Name="Image Position" Type="float" />
-          <Property Name="Image Alt Text" Type="varchar(max)" />
+          <Property Name="Image Alt Text" Type="float" />
           <Property Name="Gift Card" Type="bit" />
-          <Property Name="SEO Title" Type="varchar(max)" />
-          <Property Name="SEO Description" Type="varchar(max)" />
-          <Property Name="Google Shopping / Google Product Category" Type="varchar(max)" />
-          <Property Name="Google Shopping / Gender" Type="varchar(max)" />
-          <Property Name="Google Shopping / Age Group" Type="varchar(max)" />
-          <Property Name="Google Shopping / MPN" Type="varchar(max)" />
-          <Property Name="Google Shopping / AdWords Grouping" Type="varchar(max)" />
-          <Property Name="Google Shopping / AdWords Labels" Type="varchar(max)" />
-          <Property Name="Google Shopping / Condition" Type="varchar(max)" />
-          <Property Name="Google Shopping / Custom Product" Type="varchar(max)" />
-          <Property Name="Google Shopping / Custom Label 0" Type="varchar(max)" />
-          <Property Name="Google Shopping / Custom Label 1" Type="varchar(max)" />
-          <Property Name="Google Shopping / Custom Label 2" Type="varchar(max)" />
-          <Property Name="Google Shopping / Custom Label 3" Type="varchar(max)" />
-          <Property Name="Google Shopping / Custom Label 4" Type="varchar(max)" />
-          <Property Name="Variant Image" Type="varchar(max)" />
+          <Property Name="SEO Title" Type="float" />
+          <Property Name="SEO Description" Type="float" />
+          <Property Name="Google Shopping / Google Product Category" Type="float" />
+          <Property Name="Google Shopping / Gender" Type="float" />
+          <Property Name="Google Shopping / Age Group" Type="float" />
+          <Property Name="Google Shopping / MPN" Type="float" />
+          <Property Name="Google Shopping / AdWords Grouping" Type="float" />
+          <Property Name="Google Shopping / AdWords Labels" Type="float" />
+          <Property Name="Google Shopping / Condition" Type="float" />
+          <Property Name="Google Shopping / Custom Product" Type="float" />
+          <Property Name="Google Shopping / Custom Label 0" Type="float" />
+          <Property Name="Google Shopping / Custom Label 1" Type="float" />
+          <Property Name="Google Shopping / Custom Label 2" Type="float" />
+          <Property Name="Google Shopping / Custom Label 3" Type="float" />
+          <Property Name="Google Shopping / Custom Label 4" Type="float" />
+          <Property Name="Variant Image" Type="float" />
           <Property Name="Variant Weight Unit" Type="varchar(max)" />
-          <Property Name="Variant Tax Code" Type="varchar(max)" />
-          <Property Name="Cost per item" Type="varchar(max)" />
+          <Property Name="Variant Tax Code" Type="float" />
+          <Property Name="Cost per item" Type="float" />
           <Property Name="Status" Type="varchar(max)" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Variables">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="bigint" />
+          <Property Name="Unnamed: 0" Type="float" />
+          <Property Name="Data" Type="varchar(max)" />
+          <Property Name="Producto" Type="float" />
+          <Property Name="Sección" Type="varchar(max)" />
+          <Property Name="Tema" Type="varchar(max)" />
+          <Property Name="Verificador" Type="bigint" />
+          <Property Name="Variables" Type="varchar(max)" />
+          <Property Name="ID_VAR" Type="varchar(max)" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityContainer Name="listaProductosModelStoreContainer">
-          <EntitySet Name="Productos4" EntityType="Self.Productos4" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Productos6" EntityType="Self.Productos6" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BD" EntityType="Self.BD" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Datas" EntityType="Self.Datas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Detalle_Productos" EntityType="Self.Detalle_Productos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Investigacio" EntityType="Self.Investigacio" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Monitoreo_Invest" EntityType="Self.Monitoreo_Invest" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Paises" EntityType="Self.Paises" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Personas" EntityType="Self.Personas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Prioridad" EntityType="Self.Prioridad" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Productos" EntityType="Self.Productos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Shopify" EntityType="Self.Shopify" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShopifyOriginal" EntityType="Self.ShopifyOriginal" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Variables" EntityType="Self.Variables" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="listaProductosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="listaProductosEntities" annotation:LazyLoadingEnabled="true" >
-          <EntitySet Name="Productos4" EntityType="listaProductosModel.Productos4" />
-          <EntitySet Name="Productos6" EntityType="listaProductosModel.Productos6" />
+          <EntitySet Name="BDs" EntityType="listaProductosModel.BD" />
+          <EntitySet Name="Datas" EntityType="listaProductosModel.Data" />
+          <EntitySet Name="Detalle_Productos" EntityType="listaProductosModel.Detalle_Productos" />
+          <EntitySet Name="Investigacios" EntityType="listaProductosModel.Investigacio" />
+          <EntitySet Name="Monitoreo_Invest" EntityType="listaProductosModel.Monitoreo_Invest" />
+          <EntitySet Name="Paises" EntityType="listaProductosModel.Pais" />
+          <EntitySet Name="Personas" EntityType="listaProductosModel.Persona" />
+          <EntitySet Name="Prioridads" EntityType="listaProductosModel.Prioridad" />
+          <EntitySet Name="Productos" EntityType="listaProductosModel.Producto" />
+          <EntitySet Name="Shopifies" EntityType="listaProductosModel.Shopify" />
+          <EntitySet Name="ShopifyOriginals" EntityType="listaProductosModel.ShopifyOriginal" />
+          <EntitySet Name="Variables" EntityType="listaProductosModel.Variable" />
         </EntityContainer>
-        <EntityType Name="Productos4">
+        <EntityType Name="BD">
           <Key>
-            <PropertyRef Name="index" />
+            <PropertyRef Name="id" />
           </Key>
-          <Property Name="hola" Type="Int64" />
-          <Property Name="index" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Handle" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Body__HTML_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Vendor" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Tags" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Published" Type="Boolean" />
-          <Property Name="Option1_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Option1_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Option2_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Option2_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Option3_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Option3_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Variant_SKU" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Variant_Grams" Type="Double" />
-          <Property Name="Variant_Inventory_Tracker" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Variant_Inventory_Qty" Type="Double" />
-          <Property Name="Variant_Inventory_Policy" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Variant_Fulfillment_Service" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Variant_Price" Type="Double" />
-          <Property Name="Variant_Compare_At_Price" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Variant_Requires_Shipping" Type="Boolean" />
-          <Property Name="Variant_Taxable" Type="Boolean" />
-          <Property Name="Variant_Barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Image_Src" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Image_Position" Type="Double" />
-          <Property Name="Image_Alt_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Gift_Card" Type="Boolean" />
-          <Property Name="SEO_Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="SEO_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Google_Product_Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Age_Group" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___MPN" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___AdWords_Grouping" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___AdWords_Labels" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Condition" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Custom_Product" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Custom_Label_0" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Custom_Label_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Custom_Label_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Custom_Label_3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Custom_Label_4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Variant_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Variant_Weight_Unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Variant_Tax_Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Cost_per_item" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="index" Type="Int64" />
+          <Property Name="Unnamed__0" Type="Double" />
+          <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_Actualización_" Type="DateTime" Precision="3" />
+          <Property Name="Responsable" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Observación_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Acción" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Monitoreo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
-        <EntityType Name="Productos6">
+        <EntityType Name="Data">
           <Key>
-            <PropertyRef Name="index" />
+            <PropertyRef Name="id" />
           </Key>
-          <Property Name="level_0" Type="Int64" />
-          <Property Name="index" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="index" Type="Int64" />
+          <Property Name="Unnamed__0" Type="Double" />
+          <Property Name="Data1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id_data" Type="Int64" />
+          <Property Name="Estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Desarrollo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Investigación" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Breve_Descripción" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Slogan___Cita" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Vistas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Repositorio_Dropbox" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Link_Logo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Detalle_Productos">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="Int64" />
+          <Property Name="Unnamed__0" Type="Double" />
+          <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id_producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Plazo_Producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Secciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Sub_secciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variables" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Situación_Variable" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_Actualización" Type="DateTime" Precision="3" />
+          <Property Name="Observaciones" Type="Double" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Investigacio">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="Int64" />
+          <Property Name="N_" Type="Int64" />
+          <Property Name="Tema_Investigación_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Responsables_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_inicio" Type="DateTime" Precision="3" />
+          <Property Name="Estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_Termino" Type="DateTime" Precision="3" />
+          <Property Name="Chile" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Panamá_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Guatemala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Honduras" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="El_Salvador" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Link_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Link_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Monitoreo_Invest">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="Int64" />
+          <Property Name="N_" Type="Double" />
+          <Property Name="Tema_institución_Investigación_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Responsable" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_inicio" Type="DateTime" Precision="3" />
+          <Property Name="Fecha_avance" Type="DateTime" Precision="3" />
+          <Property Name="Fecha_Termino" Type="DateTime" Precision="3" />
+          <Property Name="Comentario" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Acción" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Seguimiento" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Pais">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="Int64" />
+          <Property Name="Unnamed__0" Type="Double" />
+          <Property Name="País" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id_país" Type="Int64" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Persona">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="Int64" />
+          <Property Name="Unnamed__0" Type="Double" />
+          <Property Name="Nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Apellido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_Completo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Prioridad">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="Int64" />
+          <Property Name="Unnamed__0" Type="Double" />
+          <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Producto_Previos" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Secuencia" Type="Double" />
+          <Property Name="País" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Integrado_PRODUCTOS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id_producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Prioridad1" Type="Double" />
+          <Property Name="Estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Avance" Type="Double" />
+          <Property Name="Responsable_Desarrollo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Responsable_Información" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Tecnología" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Tareas_Elementos" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Columna1" Type="Double" />
+          <Property Name="Tecnología2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_estimada" Type="Double" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fecha_Actualizacion" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Producto">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="Int64" />
+          <Property Name="id_data" Type="Int64" />
+          <Property Name="id_pais" Type="Int64" />
+          <Property Name="Corr_Producto" Type="Int64" />
+          <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="País" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id_producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Producto_asociado_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_comercial" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Avance" Type="Double" />
+          <Property Name="Responsable_Desarrollo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Responsable_Información" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Tecnología" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Host_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Link_Odoo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_Publicación" Type="Double" />
+          <Property Name="Escala_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Periodo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Actualizaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Tipo_Producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Fuentes_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Ref_principal_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Competencia_o_material_vinculado_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Vistas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Repositorio_Dropbox" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Link_Logo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Observaciones" Type="Double" />
+          <Property Name="Miniatura" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PORTADA_SHOPIFY" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Párrafo_enganche" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variante_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Precio_1__USD_" Type="Double" />
+          <Property Name="Variante_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Precio_2__USD_" Type="Double" />
+          <Property Name="Variante_3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Precio_3__USD_" Type="Double" />
+          <Property Name="Variable_filtro1" Type="Double" />
+          <Property Name="Variable_filtro2" Type="Double" />
+          <Property Name="Variable_filtro3" Type="Double" />
+          <Property Name="Descripción__Indicar_qué_permite_ver_o_hacer_el_producto__2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CAR_Tipo_Prod" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CAR_Var1_Disponible" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CAR_Var2_Disponible" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CAR_Var3_Disponible" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CAR_Periodo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CAR_Proveedor" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CAR_Colección" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ESP_Tecnología" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ESP_Incluye" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ESP_Uso_Disp_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ESP_Fuentes_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ACC_Recibirás" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ACC_Licencia_uso" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ACC_Actualizaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ACC_N__usuarios" Type="Double" />
+          <Property Name="Etiquetas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Shopify">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="Int64" />
+          <Property Name="id_data" Type="Int64" />
+          <Property Name="Corr_Producto" Type="Int64" />
+          <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id_producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Producto_asociado_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Nombre_comercial" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variante" Type="Double" />
+          <Property Name="Corr_variante" Type="Double" />
+          <Property Name="id_prod_var" Type="Double" />
+          <Property Name="Estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Avance" Type="Double" />
+          <Property Name="Responsable_Desarrollo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Responsable_Información" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PORTADA_SHOPIFY" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Párrafo_enganche" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variante_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Precio_1" Type="Double" />
+          <Property Name="Variante_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Precio_2" Type="Double" />
+          <Property Name="Variante_3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Precio_3" Type="Double" />
+          <Property Name="Variable_filtro1" Type="Double" />
+          <Property Name="Variable_filtro2" Type="Double" />
+          <Property Name="Variable_filtro3" Type="Double" />
+          <Property Name="Descripción__Indicar_qué_permite_ver_o_hacer_el_producto__" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CAR_Tipo_Prod" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CAR_Var1_Disponible" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CAR_Periodo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CAR_Proveedor" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CAR_Colección" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ESP_Tecnología" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Host_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Link_Odoo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_Publicación" Type="Double" />
+          <Property Name="País" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Escala_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ESP_Periodo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ESP_Incluye" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ESP_Uso_Disp_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ESP_Fuentes_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ACC_Recibirás" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ACC_Licencia_uso" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ACC_Actualizaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ACC_N__usuarios" Type="Double" />
+          <Property Name="Etiquetas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Vistas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Repositorio_Dropbox" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Link_Logo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Observaciones" Type="Double" />
+          <Property Name="Miniatura" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="ShopifyOriginal">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="Int64" />
           <Property Name="Handle" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Body__HTML_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
@@ -208,34 +642,50 @@
           <Property Name="Variant_Inventory_Policy" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Variant_Fulfillment_Service" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Variant_Price" Type="Double" />
-          <Property Name="Variant_Compare_At_Price" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Compare_At_Price" Type="Double" />
           <Property Name="Variant_Requires_Shipping" Type="Boolean" />
           <Property Name="Variant_Taxable" Type="Boolean" />
-          <Property Name="Variant_Barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Barcode" Type="Double" />
           <Property Name="Image_Src" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Image_Position" Type="Double" />
-          <Property Name="Image_Alt_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Image_Alt_Text" Type="Double" />
           <Property Name="Gift_Card" Type="Boolean" />
-          <Property Name="SEO_Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="SEO_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Google_Product_Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Age_Group" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___MPN" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___AdWords_Grouping" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___AdWords_Labels" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Condition" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Custom_Product" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Custom_Label_0" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Custom_Label_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Custom_Label_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Custom_Label_3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Google_Shopping___Custom_Label_4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Variant_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SEO_Title" Type="Double" />
+          <Property Name="SEO_Description" Type="Double" />
+          <Property Name="Google_Shopping___Google_Product_Category" Type="Double" />
+          <Property Name="Google_Shopping___Gender" Type="Double" />
+          <Property Name="Google_Shopping___Age_Group" Type="Double" />
+          <Property Name="Google_Shopping___MPN" Type="Double" />
+          <Property Name="Google_Shopping___AdWords_Grouping" Type="Double" />
+          <Property Name="Google_Shopping___AdWords_Labels" Type="Double" />
+          <Property Name="Google_Shopping___Condition" Type="Double" />
+          <Property Name="Google_Shopping___Custom_Product" Type="Double" />
+          <Property Name="Google_Shopping___Custom_Label_0" Type="Double" />
+          <Property Name="Google_Shopping___Custom_Label_1" Type="Double" />
+          <Property Name="Google_Shopping___Custom_Label_2" Type="Double" />
+          <Property Name="Google_Shopping___Custom_Label_3" Type="Double" />
+          <Property Name="Google_Shopping___Custom_Label_4" Type="Double" />
+          <Property Name="Variant_Image" Type="Double" />
           <Property Name="Variant_Weight_Unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Variant_Tax_Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Cost_per_item" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Tax_Code" Type="Double" />
+          <Property Name="Cost_per_item" Type="Double" />
           <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Variable">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="index" Type="Int64" />
+          <Property Name="Unnamed__0" Type="Double" />
+          <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Producto" Type="Double" />
+          <Property Name="Sección" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Verificador" Type="Int64" />
+          <Property Name="Variables" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ID_VAR" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -243,65 +693,275 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="listaProductosModelStoreContainer" CdmEntityContainer="listaProductosEntities" >
-          <EntitySetMapping Name="Productos4">
-            <EntityTypeMapping TypeName="listaProductosModel.Productos4">
-              <MappingFragment StoreEntitySet="Productos4">
-                <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="Cost_per_item" ColumnName="Cost per item" />
-                <ScalarProperty Name="Variant_Tax_Code" ColumnName="Variant Tax Code" />
-                <ScalarProperty Name="Variant_Weight_Unit" ColumnName="Variant Weight Unit" />
-                <ScalarProperty Name="Variant_Image" ColumnName="Variant Image" />
-                <ScalarProperty Name="Google_Shopping___Custom_Label_4" ColumnName="Google Shopping / Custom Label 4" />
-                <ScalarProperty Name="Google_Shopping___Custom_Label_3" ColumnName="Google Shopping / Custom Label 3" />
-                <ScalarProperty Name="Google_Shopping___Custom_Label_2" ColumnName="Google Shopping / Custom Label 2" />
-                <ScalarProperty Name="Google_Shopping___Custom_Label_1" ColumnName="Google Shopping / Custom Label 1" />
-                <ScalarProperty Name="Google_Shopping___Custom_Label_0" ColumnName="Google Shopping / Custom Label 0" />
-                <ScalarProperty Name="Google_Shopping___Custom_Product" ColumnName="Google Shopping / Custom Product" />
-                <ScalarProperty Name="Google_Shopping___Condition" ColumnName="Google Shopping / Condition" />
-                <ScalarProperty Name="Google_Shopping___AdWords_Labels" ColumnName="Google Shopping / AdWords Labels" />
-                <ScalarProperty Name="Google_Shopping___AdWords_Grouping" ColumnName="Google Shopping / AdWords Grouping" />
-                <ScalarProperty Name="Google_Shopping___MPN" ColumnName="Google Shopping / MPN" />
-                <ScalarProperty Name="Google_Shopping___Age_Group" ColumnName="Google Shopping / Age Group" />
-                <ScalarProperty Name="Google_Shopping___Gender" ColumnName="Google Shopping / Gender" />
-                <ScalarProperty Name="Google_Shopping___Google_Product_Category" ColumnName="Google Shopping / Google Product Category" />
-                <ScalarProperty Name="SEO_Description" ColumnName="SEO Description" />
-                <ScalarProperty Name="SEO_Title" ColumnName="SEO Title" />
-                <ScalarProperty Name="Gift_Card" ColumnName="Gift Card" />
-                <ScalarProperty Name="Image_Alt_Text" ColumnName="Image Alt Text" />
-                <ScalarProperty Name="Image_Position" ColumnName="Image Position" />
-                <ScalarProperty Name="Image_Src" ColumnName="Image Src" />
-                <ScalarProperty Name="Variant_Barcode" ColumnName="Variant Barcode" />
-                <ScalarProperty Name="Variant_Taxable" ColumnName="Variant Taxable" />
-                <ScalarProperty Name="Variant_Requires_Shipping" ColumnName="Variant Requires Shipping" />
-                <ScalarProperty Name="Variant_Compare_At_Price" ColumnName="Variant Compare At Price" />
-                <ScalarProperty Name="Variant_Price" ColumnName="Variant Price" />
-                <ScalarProperty Name="Variant_Fulfillment_Service" ColumnName="Variant Fulfillment Service" />
-                <ScalarProperty Name="Variant_Inventory_Policy" ColumnName="Variant Inventory Policy" />
-                <ScalarProperty Name="Variant_Inventory_Qty" ColumnName="Variant Inventory Qty" />
-                <ScalarProperty Name="Variant_Inventory_Tracker" ColumnName="Variant Inventory Tracker" />
-                <ScalarProperty Name="Variant_Grams" ColumnName="Variant Grams" />
-                <ScalarProperty Name="Variant_SKU" ColumnName="Variant SKU" />
-                <ScalarProperty Name="Option3_Value" ColumnName="Option3 Value" />
-                <ScalarProperty Name="Option3_Name" ColumnName="Option3 Name" />
-                <ScalarProperty Name="Option2_Value" ColumnName="Option2 Value" />
-                <ScalarProperty Name="Option2_Name" ColumnName="Option2 Name" />
-                <ScalarProperty Name="Option1_Value" ColumnName="Option1 Value" />
-                <ScalarProperty Name="Option1_Name" ColumnName="Option1 Name" />
-                <ScalarProperty Name="Published" ColumnName="Published" />
-                <ScalarProperty Name="Tags" ColumnName="Tags" />
-                <ScalarProperty Name="Type" ColumnName="Type" />
-                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
-                <ScalarProperty Name="Body__HTML_" ColumnName="Body (HTML)" />
-                <ScalarProperty Name="Title" ColumnName="Title" />
-                <ScalarProperty Name="Handle" ColumnName="Handle" />
+          <EntitySetMapping Name="BDs">
+            <EntityTypeMapping TypeName="listaProductosModel.BD">
+              <MappingFragment StoreEntitySet="BD">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Monitoreo" ColumnName="Monitoreo" />
+                <ScalarProperty Name="Acción" ColumnName="Acción" />
+                <ScalarProperty Name="Observación_" ColumnName="Observación " />
+                <ScalarProperty Name="Tema" ColumnName="Tema" />
+                <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+                <ScalarProperty Name="Fecha_Actualización_" ColumnName="Fecha Actualización " />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+                <ScalarProperty Name="Unnamed__0" ColumnName="Unnamed: 0" />
                 <ScalarProperty Name="index" ColumnName="index" />
-                <ScalarProperty Name="hola" ColumnName="hola" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Productos6">
-            <EntityTypeMapping TypeName="listaProductosModel.Productos6">
-              <MappingFragment StoreEntitySet="Productos6">
+          <EntitySetMapping Name="Datas">
+            <EntityTypeMapping TypeName="listaProductosModel.Data">
+              <MappingFragment StoreEntitySet="Datas">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Link_Logo" ColumnName="Link Logo" />
+                <ScalarProperty Name="Repositorio_Dropbox" ColumnName="Repositorio Dropbox" />
+                <ScalarProperty Name="Vistas" ColumnName="Vistas" />
+                <ScalarProperty Name="Slogan___Cita" ColumnName="Slogan - Cita" />
+                <ScalarProperty Name="Breve_Descripción" ColumnName="Breve Descripción" />
+                <ScalarProperty Name="Investigación" ColumnName="Investigación" />
+                <ScalarProperty Name="Desarrollo" ColumnName="Desarrollo" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="id_data" ColumnName="id_data" />
+                <ScalarProperty Name="Data1" ColumnName="Data" />
+                <ScalarProperty Name="Unnamed__0" ColumnName="Unnamed: 0" />
+                <ScalarProperty Name="index" ColumnName="index" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Detalle_Productos">
+            <EntityTypeMapping TypeName="listaProductosModel.Detalle_Productos">
+              <MappingFragment StoreEntitySet="Detalle_Productos">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="Fecha_Actualización" ColumnName="Fecha Actualización" />
+                <ScalarProperty Name="Situación_Variable" ColumnName="Situación Variable" />
+                <ScalarProperty Name="Fuente" ColumnName="Fuente" />
+                <ScalarProperty Name="Variables" ColumnName="Variables" />
+                <ScalarProperty Name="Sub_secciones" ColumnName="Sub-secciones" />
+                <ScalarProperty Name="Secciones" ColumnName="Secciones" />
+                <ScalarProperty Name="Producto" ColumnName="Producto" />
+                <ScalarProperty Name="Plazo_Producto" ColumnName="Plazo Producto" />
+                <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+                <ScalarProperty Name="Unnamed__0" ColumnName="Unnamed: 0" />
+                <ScalarProperty Name="index" ColumnName="index" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Investigacios">
+            <EntityTypeMapping TypeName="listaProductosModel.Investigacio">
+              <MappingFragment StoreEntitySet="Investigacio">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Link_2" ColumnName="Link 2" />
+                <ScalarProperty Name="Link_1" ColumnName="Link 1" />
+                <ScalarProperty Name="El_Salvador" ColumnName="El Salvador" />
+                <ScalarProperty Name="Honduras" ColumnName="Honduras" />
+                <ScalarProperty Name="Guatemala" ColumnName="Guatemala" />
+                <ScalarProperty Name="Panamá_" ColumnName="Panamá " />
+                <ScalarProperty Name="Chile" ColumnName="Chile" />
+                <ScalarProperty Name="Fecha_Termino" ColumnName="Fecha Termino" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Fecha_inicio" ColumnName="Fecha inicio" />
+                <ScalarProperty Name="Responsables_" ColumnName="Responsables " />
+                <ScalarProperty Name="Tema_Investigación_" ColumnName="Tema Investigación " />
+                <ScalarProperty Name="N_" ColumnName="N°" />
+                <ScalarProperty Name="index" ColumnName="index" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Monitoreo_Invest">
+            <EntityTypeMapping TypeName="listaProductosModel.Monitoreo_Invest">
+              <MappingFragment StoreEntitySet="Monitoreo_Invest">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Seguimiento" ColumnName="Seguimiento" />
+                <ScalarProperty Name="Acción" ColumnName="Acción" />
+                <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+                <ScalarProperty Name="Fecha_Termino" ColumnName="Fecha Termino" />
+                <ScalarProperty Name="Fecha_avance" ColumnName="Fecha avance" />
+                <ScalarProperty Name="Fecha_inicio" ColumnName="Fecha inicio" />
+                <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+                <ScalarProperty Name="Tema_institución_Investigación_" ColumnName="Tema/institución Investigación " />
+                <ScalarProperty Name="N_" ColumnName="N°" />
+                <ScalarProperty Name="index" ColumnName="index" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Paises">
+            <EntityTypeMapping TypeName="listaProductosModel.Pais">
+              <MappingFragment StoreEntitySet="Paises">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="id_país" ColumnName="id_país" />
+                <ScalarProperty Name="País" ColumnName="País" />
+                <ScalarProperty Name="Unnamed__0" ColumnName="Unnamed: 0" />
+                <ScalarProperty Name="index" ColumnName="index" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Personas">
+            <EntityTypeMapping TypeName="listaProductosModel.Persona">
+              <MappingFragment StoreEntitySet="Personas">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Nombre_Completo" ColumnName="Nombre Completo" />
+                <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Unnamed__0" ColumnName="Unnamed: 0" />
+                <ScalarProperty Name="index" ColumnName="index" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Prioridads">
+            <EntityTypeMapping TypeName="listaProductosModel.Prioridad">
+              <MappingFragment StoreEntitySet="Prioridad">
+                <ScalarProperty Name="Fecha_Actualizacion" ColumnName="Fecha_Actualizacion" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Fecha_estimada" ColumnName="Fecha estimada" />
+                <ScalarProperty Name="Tecnología2" ColumnName="Tecnología2" />
+                <ScalarProperty Name="Columna1" ColumnName="Columna1" />
+                <ScalarProperty Name="Tareas_Elementos" ColumnName="Tareas/Elementos" />
+                <ScalarProperty Name="Tecnología" ColumnName="Tecnología" />
+                <ScalarProperty Name="Responsable_Información" ColumnName="Responsable Información" />
+                <ScalarProperty Name="Responsable_Desarrollo" ColumnName="Responsable Desarrollo" />
+                <ScalarProperty Name="Avance" ColumnName="Avance" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Prioridad1" ColumnName="Prioridad" />
+                <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+                <ScalarProperty Name="Integrado_PRODUCTOS" ColumnName="Integrado_PRODUCTOS" />
+                <ScalarProperty Name="País" ColumnName="País" />
+                <ScalarProperty Name="Secuencia" ColumnName="Secuencia" />
+                <ScalarProperty Name="Producto_Previos" ColumnName="Producto Previos" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+                <ScalarProperty Name="Unnamed__0" ColumnName="Unnamed: 0" />
+                <ScalarProperty Name="index" ColumnName="index" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Productos">
+            <EntityTypeMapping TypeName="listaProductosModel.Producto">
+              <MappingFragment StoreEntitySet="Productos">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Etiquetas" ColumnName="Etiquetas" />
+                <ScalarProperty Name="ACC_N__usuarios" ColumnName="ACC_N°_usuarios" />
+                <ScalarProperty Name="ACC_Actualizaciones" ColumnName="ACC_Actualizaciones" />
+                <ScalarProperty Name="ACC_Licencia_uso" ColumnName="ACC_Licencia_uso" />
+                <ScalarProperty Name="ACC_Recibirás" ColumnName="ACC_Recibirás" />
+                <ScalarProperty Name="ESP_Fuentes_" ColumnName="ESP_Fuentes " />
+                <ScalarProperty Name="ESP_Uso_Disp_" ColumnName="ESP_Uso_Disp." />
+                <ScalarProperty Name="ESP_Incluye" ColumnName="ESP_Incluye" />
+                <ScalarProperty Name="ESP_Tecnología" ColumnName="ESP_Tecnología" />
+                <ScalarProperty Name="CAR_Colección" ColumnName="CAR_Colección" />
+                <ScalarProperty Name="CAR_Proveedor" ColumnName="CAR_Proveedor" />
+                <ScalarProperty Name="CAR_Periodo" ColumnName="CAR_Periodo" />
+                <ScalarProperty Name="CAR_Var3_Disponible" ColumnName="CAR_Var3_Disponible" />
+                <ScalarProperty Name="CAR_Var2_Disponible" ColumnName="CAR_Var2_Disponible" />
+                <ScalarProperty Name="CAR_Var1_Disponible" ColumnName="CAR_Var1_Disponible" />
+                <ScalarProperty Name="CAR_Tipo_Prod" ColumnName="CAR_Tipo_Prod" />
+                <ScalarProperty Name="Descripción__Indicar_qué_permite_ver_o_hacer_el_producto__2" ColumnName="Descripción (Indicar qué permite ver o hacer el producto) 2" />
+                <ScalarProperty Name="Variable_filtro3" ColumnName="Variable_filtro3" />
+                <ScalarProperty Name="Variable_filtro2" ColumnName="Variable_filtro2" />
+                <ScalarProperty Name="Variable_filtro1" ColumnName="Variable_filtro1" />
+                <ScalarProperty Name="Precio_3__USD_" ColumnName="Precio_3 (USD)" />
+                <ScalarProperty Name="Variante_3" ColumnName="Variante_3" />
+                <ScalarProperty Name="Precio_2__USD_" ColumnName="Precio_2 (USD)" />
+                <ScalarProperty Name="Variante_2" ColumnName="Variante_2" />
+                <ScalarProperty Name="Precio_1__USD_" ColumnName="Precio_1 (USD)" />
+                <ScalarProperty Name="Variante_1" ColumnName="Variante_1" />
+                <ScalarProperty Name="Párrafo_enganche" ColumnName="Párrafo enganche" />
+                <ScalarProperty Name="PORTADA_SHOPIFY" ColumnName="PORTADA SHOPIFY" />
+                <ScalarProperty Name="Miniatura" ColumnName="Miniatura" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="Link_Logo" ColumnName="Link Logo" />
+                <ScalarProperty Name="Repositorio_Dropbox" ColumnName="Repositorio Dropbox" />
+                <ScalarProperty Name="Vistas" ColumnName="Vistas" />
+                <ScalarProperty Name="Competencia_o_material_vinculado_" ColumnName="Competencia o material vinculado " />
+                <ScalarProperty Name="Ref_principal_" ColumnName="Ref principal " />
+                <ScalarProperty Name="Fuentes_" ColumnName="Fuentes " />
+                <ScalarProperty Name="Tipo_Producto" ColumnName="Tipo Producto" />
+                <ScalarProperty Name="Actualizaciones" ColumnName="Actualizaciones" />
+                <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+                <ScalarProperty Name="Escala_" ColumnName="Escala " />
+                <ScalarProperty Name="Fecha_Publicación" ColumnName="Fecha Publicación" />
+                <ScalarProperty Name="Link_Odoo" ColumnName="Link Odoo" />
+                <ScalarProperty Name="Host_" ColumnName="Host " />
+                <ScalarProperty Name="Tecnología" ColumnName="Tecnología" />
+                <ScalarProperty Name="Responsable_Información" ColumnName="Responsable Información" />
+                <ScalarProperty Name="Responsable_Desarrollo" ColumnName="Responsable Desarrollo" />
+                <ScalarProperty Name="Avance" ColumnName="Avance" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Nombre_comercial" ColumnName="Nombre comercial" />
+                <ScalarProperty Name="Producto_asociado_" ColumnName="Producto asociado " />
+                <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+                <ScalarProperty Name="País" ColumnName="País" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+                <ScalarProperty Name="Corr_Producto" ColumnName="Corr_Producto" />
+                <ScalarProperty Name="id_pais" ColumnName="id_pais" />
+                <ScalarProperty Name="id_data" ColumnName="id_data" />
+                <ScalarProperty Name="index" ColumnName="index" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Shopifies">
+            <EntityTypeMapping TypeName="listaProductosModel.Shopify">
+              <MappingFragment StoreEntitySet="Shopify">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Miniatura" ColumnName="Miniatura" />
+                <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+                <ScalarProperty Name="Link_Logo" ColumnName="Link Logo" />
+                <ScalarProperty Name="Repositorio_Dropbox" ColumnName="Repositorio Dropbox" />
+                <ScalarProperty Name="Vistas" ColumnName="Vistas" />
+                <ScalarProperty Name="Etiquetas" ColumnName="Etiquetas" />
+                <ScalarProperty Name="ACC_N__usuarios" ColumnName="ACC_N°_usuarios" />
+                <ScalarProperty Name="ACC_Actualizaciones" ColumnName="ACC_Actualizaciones" />
+                <ScalarProperty Name="ACC_Licencia_uso" ColumnName="ACC_Licencia_uso" />
+                <ScalarProperty Name="ACC_Recibirás" ColumnName="ACC_Recibirás" />
+                <ScalarProperty Name="ESP_Fuentes_" ColumnName="ESP_Fuentes " />
+                <ScalarProperty Name="ESP_Uso_Disp_" ColumnName="ESP_Uso_Disp." />
+                <ScalarProperty Name="ESP_Incluye" ColumnName="ESP_Incluye" />
+                <ScalarProperty Name="ESP_Periodo" ColumnName="ESP_Periodo" />
+                <ScalarProperty Name="Escala_" ColumnName="Escala " />
+                <ScalarProperty Name="País" ColumnName="País" />
+                <ScalarProperty Name="Fecha_Publicación" ColumnName="Fecha Publicación" />
+                <ScalarProperty Name="Link_Odoo" ColumnName="Link Odoo" />
+                <ScalarProperty Name="Host_" ColumnName="Host " />
+                <ScalarProperty Name="ESP_Tecnología" ColumnName="ESP_Tecnología" />
+                <ScalarProperty Name="CAR_Colección" ColumnName="CAR_Colección" />
+                <ScalarProperty Name="CAR_Proveedor" ColumnName="CAR_Proveedor" />
+                <ScalarProperty Name="CAR_Periodo" ColumnName="CAR_Periodo" />
+                <ScalarProperty Name="CAR_Var1_Disponible" ColumnName="CAR_Var1_Disponible" />
+                <ScalarProperty Name="CAR_Tipo_Prod" ColumnName="CAR_Tipo_Prod" />
+                <ScalarProperty Name="Descripción__Indicar_qué_permite_ver_o_hacer_el_producto__" ColumnName="Descripción (Indicar qué permite ver o hacer el producto) " />
+                <ScalarProperty Name="Variable_filtro3" ColumnName="Variable_filtro3" />
+                <ScalarProperty Name="Variable_filtro2" ColumnName="Variable_filtro2" />
+                <ScalarProperty Name="Variable_filtro1" ColumnName="Variable_filtro1" />
+                <ScalarProperty Name="Precio_3" ColumnName="Precio_3" />
+                <ScalarProperty Name="Variante_3" ColumnName="Variante_3" />
+                <ScalarProperty Name="Precio_2" ColumnName="Precio_2" />
+                <ScalarProperty Name="Variante_2" ColumnName="Variante_2" />
+                <ScalarProperty Name="Precio_1" ColumnName="Precio_1" />
+                <ScalarProperty Name="Variante_1" ColumnName="Variante_1" />
+                <ScalarProperty Name="Párrafo_enganche" ColumnName="Párrafo enganche" />
+                <ScalarProperty Name="PORTADA_SHOPIFY" ColumnName="PORTADA SHOPIFY" />
+                <ScalarProperty Name="Responsable_Información" ColumnName="Responsable Información" />
+                <ScalarProperty Name="Responsable_Desarrollo" ColumnName="Responsable Desarrollo" />
+                <ScalarProperty Name="Avance" ColumnName="Avance" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="id_prod_var" ColumnName="id_prod_var" />
+                <ScalarProperty Name="Corr_variante" ColumnName="Corr_variante" />
+                <ScalarProperty Name="Variante" ColumnName="Variante" />
+                <ScalarProperty Name="Nombre_comercial" ColumnName="Nombre comercial" />
+                <ScalarProperty Name="Producto_asociado_" ColumnName="Producto asociado " />
+                <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+                <ScalarProperty Name="Corr_Producto" ColumnName="Corr_Producto" />
+                <ScalarProperty Name="id_data" ColumnName="id_data" />
+                <ScalarProperty Name="index" ColumnName="index" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ShopifyOriginals">
+            <EntityTypeMapping TypeName="listaProductosModel.ShopifyOriginal">
+              <MappingFragment StoreEntitySet="ShopifyOriginal">
+                <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="Cost_per_item" ColumnName="Cost per item" />
                 <ScalarProperty Name="Variant_Tax_Code" ColumnName="Variant Tax Code" />
@@ -351,7 +1011,22 @@
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Handle" ColumnName="Handle" />
                 <ScalarProperty Name="index" ColumnName="index" />
-                <ScalarProperty Name="level_0" ColumnName="level_0" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Variables">
+            <EntityTypeMapping TypeName="listaProductosModel.Variable">
+              <MappingFragment StoreEntitySet="Variables">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="ID_VAR" ColumnName="ID_VAR" />
+                <ScalarProperty Name="Variables" ColumnName="Variables" />
+                <ScalarProperty Name="Verificador" ColumnName="Verificador" />
+                <ScalarProperty Name="Tema" ColumnName="Tema" />
+                <ScalarProperty Name="Sección" ColumnName="Sección" />
+                <ScalarProperty Name="Producto" ColumnName="Producto" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+                <ScalarProperty Name="Unnamed__0" ColumnName="Unnamed: 0" />
+                <ScalarProperty Name="index" ColumnName="index" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

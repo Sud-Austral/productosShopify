@@ -25,7 +25,17 @@ namespace Login.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Productos4> Productos4 { get; set; }
-        public virtual DbSet<Productos6> Productos6 { get; set; }
+        public virtual DbSet<BD> BDs { get; set; }
+        public virtual DbSet<Data> Datas { get; set; }
+        public virtual DbSet<Detalle_Productos> Detalle_Productos { get; set; }
+        public virtual DbSet<Investigacio> Investigacios { get; set; }
+        public virtual DbSet<Monitoreo_Invest> Monitoreo_Invest { get; set; }
+        public virtual DbSet<Pais> Paises { get; set; }
+        public virtual DbSet<Persona> Personas { get; set; }
+        public virtual DbSet<Prioridad> Prioridads { get; set; }
+        public virtual DbSet<Producto> Productos { get; set; }
+        public virtual DbSet<Shopify> Shopifies { get; set; }
+        public virtual DbSet<ShopifyOriginal> ShopifyOriginals { get; set; }
+        public virtual DbSet<Variable> Variables { get; set; }
     }
 }

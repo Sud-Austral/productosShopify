@@ -4,9 +4,19 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="87a8b7202b9d40cbbf897ec204a9f7b1" Name="Diagram1" >
-        <EntityTypeShape EntityType="listaProductosModel.Productos4" Width="2.625" PointX="0.75" PointY="0.75" />
-        <EntityTypeShape EntityType="listaProductosModel.Productos6" Width="1.5" PointX="4.375" PointY="0.75" />
+      <Diagram DiagramId="87a8b7202b9d40cbbf897ec204a9f7b1" Name="Diagram1" ZoomLevel="63" >
+        <EntityTypeShape EntityType="listaProductosModel.BD" Width="1.5" PointX="3.75" PointY="0.875" />
+        <EntityTypeShape EntityType="listaProductosModel.Data" Width="1.5" PointX="5.75" PointY="0.875" />
+        <EntityTypeShape EntityType="listaProductosModel.Detalle_Productos" Width="1.5" PointX="7.75" PointY="0.875" />
+        <EntityTypeShape EntityType="listaProductosModel.Investigacio" Width="1.5" PointX="3.75" PointY="5.875" />
+        <EntityTypeShape EntityType="listaProductosModel.Monitoreo_Invest" Width="1.5" PointX="5.75" PointY="5.875" />
+        <EntityTypeShape EntityType="listaProductosModel.Pais" Width="1.5" PointX="7.75" PointY="5.875" />
+        <EntityTypeShape EntityType="listaProductosModel.Persona" Width="1.5" PointX="9.75" PointY="0.875" />
+        <EntityTypeShape EntityType="listaProductosModel.Prioridad" Width="1.5" PointX="9.75" PointY="3.875" />
+        <EntityTypeShape EntityType="listaProductosModel.Producto" Width="1.5" PointX="11.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="listaProductosModel.Shopify" Width="1.5" PointX="5.75" PointY="9.875" />
+        <EntityTypeShape EntityType="listaProductosModel.ShopifyOriginal" Width="1.5" PointX="7.75" PointY="9.875" />
+        <EntityTypeShape EntityType="listaProductosModel.Variable" Width="1.5" PointX="13.75" PointY="0.875" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

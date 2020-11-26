@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="listaProductosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Productos4">
+          <Key>
+            <PropertyRef Name="index" />
+          </Key>
+          <Property Name="hola" Type="bigint" />
+          <Property Name="index" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Handle" Type="varchar(max)" />
+          <Property Name="Title" Type="varchar(max)" />
+          <Property Name="Body (HTML)" Type="varchar(max)" />
+          <Property Name="Vendor" Type="varchar(max)" />
+          <Property Name="Type" Type="varchar(max)" />
+          <Property Name="Tags" Type="varchar(max)" />
+          <Property Name="Published" Type="bit" />
+          <Property Name="Option1 Name" Type="varchar(max)" />
+          <Property Name="Option1 Value" Type="varchar(max)" />
+          <Property Name="Option2 Name" Type="varchar(max)" />
+          <Property Name="Option2 Value" Type="varchar(max)" />
+          <Property Name="Option3 Name" Type="varchar(max)" />
+          <Property Name="Option3 Value" Type="varchar(max)" />
+          <Property Name="Variant SKU" Type="varchar(max)" />
+          <Property Name="Variant Grams" Type="float" />
+          <Property Name="Variant Inventory Tracker" Type="varchar(max)" />
+          <Property Name="Variant Inventory Qty" Type="float" />
+          <Property Name="Variant Inventory Policy" Type="varchar(max)" />
+          <Property Name="Variant Fulfillment Service" Type="varchar(max)" />
+          <Property Name="Variant Price" Type="float" />
+          <Property Name="Variant Compare At Price" Type="varchar(max)" />
+          <Property Name="Variant Requires Shipping" Type="bit" />
+          <Property Name="Variant Taxable" Type="bit" />
+          <Property Name="Variant Barcode" Type="varchar(max)" />
+          <Property Name="Image Src" Type="varchar(max)" />
+          <Property Name="Image Position" Type="float" />
+          <Property Name="Image Alt Text" Type="varchar(max)" />
+          <Property Name="Gift Card" Type="bit" />
+          <Property Name="SEO Title" Type="varchar(max)" />
+          <Property Name="SEO Description" Type="varchar(max)" />
+          <Property Name="Google Shopping / Google Product Category" Type="varchar(max)" />
+          <Property Name="Google Shopping / Gender" Type="varchar(max)" />
+          <Property Name="Google Shopping / Age Group" Type="varchar(max)" />
+          <Property Name="Google Shopping / MPN" Type="varchar(max)" />
+          <Property Name="Google Shopping / AdWords Grouping" Type="varchar(max)" />
+          <Property Name="Google Shopping / AdWords Labels" Type="varchar(max)" />
+          <Property Name="Google Shopping / Condition" Type="varchar(max)" />
+          <Property Name="Google Shopping / Custom Product" Type="varchar(max)" />
+          <Property Name="Google Shopping / Custom Label 0" Type="varchar(max)" />
+          <Property Name="Google Shopping / Custom Label 1" Type="varchar(max)" />
+          <Property Name="Google Shopping / Custom Label 2" Type="varchar(max)" />
+          <Property Name="Google Shopping / Custom Label 3" Type="varchar(max)" />
+          <Property Name="Google Shopping / Custom Label 4" Type="varchar(max)" />
+          <Property Name="Variant Image" Type="varchar(max)" />
+          <Property Name="Variant Weight Unit" Type="varchar(max)" />
+          <Property Name="Variant Tax Code" Type="varchar(max)" />
+          <Property Name="Cost per item" Type="varchar(max)" />
+          <Property Name="Status" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Productos6">
+          <Key>
+            <PropertyRef Name="index" />
+          </Key>
+          <Property Name="level_0" Type="bigint" />
+          <Property Name="index" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Handle" Type="varchar(max)" />
+          <Property Name="Title" Type="varchar(max)" />
+          <Property Name="Body (HTML)" Type="varchar(max)" />
+          <Property Name="Vendor" Type="varchar(max)" />
+          <Property Name="Type" Type="varchar(max)" />
+          <Property Name="Tags" Type="varchar(max)" />
+          <Property Name="Published" Type="bit" />
+          <Property Name="Option1 Name" Type="varchar(max)" />
+          <Property Name="Option1 Value" Type="varchar(max)" />
+          <Property Name="Option2 Name" Type="varchar(max)" />
+          <Property Name="Option2 Value" Type="varchar(max)" />
+          <Property Name="Option3 Name" Type="varchar(max)" />
+          <Property Name="Option3 Value" Type="varchar(max)" />
+          <Property Name="Variant SKU" Type="varchar(max)" />
+          <Property Name="Variant Grams" Type="float" />
+          <Property Name="Variant Inventory Tracker" Type="varchar(max)" />
+          <Property Name="Variant Inventory Qty" Type="float" />
+          <Property Name="Variant Inventory Policy" Type="varchar(max)" />
+          <Property Name="Variant Fulfillment Service" Type="varchar(max)" />
+          <Property Name="Variant Price" Type="float" />
+          <Property Name="Variant Compare At Price" Type="varchar(max)" />
+          <Property Name="Variant Requires Shipping" Type="bit" />
+          <Property Name="Variant Taxable" Type="bit" />
+          <Property Name="Variant Barcode" Type="varchar(max)" />
+          <Property Name="Image Src" Type="varchar(max)" />
+          <Property Name="Image Position" Type="float" />
+          <Property Name="Image Alt Text" Type="varchar(max)" />
+          <Property Name="Gift Card" Type="bit" />
+          <Property Name="SEO Title" Type="varchar(max)" />
+          <Property Name="SEO Description" Type="varchar(max)" />
+          <Property Name="Google Shopping / Google Product Category" Type="varchar(max)" />
+          <Property Name="Google Shopping / Gender" Type="varchar(max)" />
+          <Property Name="Google Shopping / Age Group" Type="varchar(max)" />
+          <Property Name="Google Shopping / MPN" Type="varchar(max)" />
+          <Property Name="Google Shopping / AdWords Grouping" Type="varchar(max)" />
+          <Property Name="Google Shopping / AdWords Labels" Type="varchar(max)" />
+          <Property Name="Google Shopping / Condition" Type="varchar(max)" />
+          <Property Name="Google Shopping / Custom Product" Type="varchar(max)" />
+          <Property Name="Google Shopping / Custom Label 0" Type="varchar(max)" />
+          <Property Name="Google Shopping / Custom Label 1" Type="varchar(max)" />
+          <Property Name="Google Shopping / Custom Label 2" Type="varchar(max)" />
+          <Property Name="Google Shopping / Custom Label 3" Type="varchar(max)" />
+          <Property Name="Google Shopping / Custom Label 4" Type="varchar(max)" />
+          <Property Name="Variant Image" Type="varchar(max)" />
+          <Property Name="Variant Weight Unit" Type="varchar(max)" />
+          <Property Name="Variant Tax Code" Type="varchar(max)" />
+          <Property Name="Cost per item" Type="varchar(max)" />
+          <Property Name="Status" Type="varchar(max)" />
+        </EntityType>
+        <EntityContainer Name="listaProductosModelStoreContainer">
+          <EntitySet Name="Productos4" EntityType="Self.Productos4" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Productos6" EntityType="Self.Productos6" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="listaProductosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="listaProductosEntities" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="Productos4" EntityType="listaProductosModel.Productos4" />
+          <EntitySet Name="Productos6" EntityType="listaProductosModel.Productos6" />
+        </EntityContainer>
+        <EntityType Name="Productos4">
+          <Key>
+            <PropertyRef Name="index" />
+          </Key>
+          <Property Name="hola" Type="Int64" />
+          <Property Name="index" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Handle" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Body__HTML_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Vendor" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Tags" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Published" Type="Boolean" />
+          <Property Name="Option1_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Option1_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Option2_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Option2_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Option3_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Option3_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_SKU" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Grams" Type="Double" />
+          <Property Name="Variant_Inventory_Tracker" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Inventory_Qty" Type="Double" />
+          <Property Name="Variant_Inventory_Policy" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Fulfillment_Service" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Price" Type="Double" />
+          <Property Name="Variant_Compare_At_Price" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Requires_Shipping" Type="Boolean" />
+          <Property Name="Variant_Taxable" Type="Boolean" />
+          <Property Name="Variant_Barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Image_Src" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Image_Position" Type="Double" />
+          <Property Name="Image_Alt_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Gift_Card" Type="Boolean" />
+          <Property Name="SEO_Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SEO_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Google_Product_Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Age_Group" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___MPN" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___AdWords_Grouping" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___AdWords_Labels" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Condition" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Custom_Product" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Custom_Label_0" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Custom_Label_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Custom_Label_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Custom_Label_3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Custom_Label_4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Weight_Unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Tax_Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Cost_per_item" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Productos6">
+          <Key>
+            <PropertyRef Name="index" />
+          </Key>
+          <Property Name="level_0" Type="Int64" />
+          <Property Name="index" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Handle" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Body__HTML_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Vendor" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Tags" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Published" Type="Boolean" />
+          <Property Name="Option1_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Option1_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Option2_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Option2_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Option3_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Option3_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_SKU" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Grams" Type="Double" />
+          <Property Name="Variant_Inventory_Tracker" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Inventory_Qty" Type="Double" />
+          <Property Name="Variant_Inventory_Policy" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Fulfillment_Service" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Price" Type="Double" />
+          <Property Name="Variant_Compare_At_Price" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Requires_Shipping" Type="Boolean" />
+          <Property Name="Variant_Taxable" Type="Boolean" />
+          <Property Name="Variant_Barcode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Image_Src" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Image_Position" Type="Double" />
+          <Property Name="Image_Alt_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Gift_Card" Type="Boolean" />
+          <Property Name="SEO_Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SEO_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Google_Product_Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Age_Group" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___MPN" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___AdWords_Grouping" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___AdWords_Labels" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Condition" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Custom_Product" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Custom_Label_0" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Custom_Label_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Custom_Label_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Custom_Label_3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Google_Shopping___Custom_Label_4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Weight_Unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Variant_Tax_Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Cost_per_item" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="listaProductosModelStoreContainer" CdmEntityContainer="listaProductosEntities" >
+          <EntitySetMapping Name="Productos4">
+            <EntityTypeMapping TypeName="listaProductosModel.Productos4">
+              <MappingFragment StoreEntitySet="Productos4">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Cost_per_item" ColumnName="Cost per item" />
+                <ScalarProperty Name="Variant_Tax_Code" ColumnName="Variant Tax Code" />
+                <ScalarProperty Name="Variant_Weight_Unit" ColumnName="Variant Weight Unit" />
+                <ScalarProperty Name="Variant_Image" ColumnName="Variant Image" />
+                <ScalarProperty Name="Google_Shopping___Custom_Label_4" ColumnName="Google Shopping / Custom Label 4" />
+                <ScalarProperty Name="Google_Shopping___Custom_Label_3" ColumnName="Google Shopping / Custom Label 3" />
+                <ScalarProperty Name="Google_Shopping___Custom_Label_2" ColumnName="Google Shopping / Custom Label 2" />
+                <ScalarProperty Name="Google_Shopping___Custom_Label_1" ColumnName="Google Shopping / Custom Label 1" />
+                <ScalarProperty Name="Google_Shopping___Custom_Label_0" ColumnName="Google Shopping / Custom Label 0" />
+                <ScalarProperty Name="Google_Shopping___Custom_Product" ColumnName="Google Shopping / Custom Product" />
+                <ScalarProperty Name="Google_Shopping___Condition" ColumnName="Google Shopping / Condition" />
+                <ScalarProperty Name="Google_Shopping___AdWords_Labels" ColumnName="Google Shopping / AdWords Labels" />
+                <ScalarProperty Name="Google_Shopping___AdWords_Grouping" ColumnName="Google Shopping / AdWords Grouping" />
+                <ScalarProperty Name="Google_Shopping___MPN" ColumnName="Google Shopping / MPN" />
+                <ScalarProperty Name="Google_Shopping___Age_Group" ColumnName="Google Shopping / Age Group" />
+                <ScalarProperty Name="Google_Shopping___Gender" ColumnName="Google Shopping / Gender" />
+                <ScalarProperty Name="Google_Shopping___Google_Product_Category" ColumnName="Google Shopping / Google Product Category" />
+                <ScalarProperty Name="SEO_Description" ColumnName="SEO Description" />
+                <ScalarProperty Name="SEO_Title" ColumnName="SEO Title" />
+                <ScalarProperty Name="Gift_Card" ColumnName="Gift Card" />
+                <ScalarProperty Name="Image_Alt_Text" ColumnName="Image Alt Text" />
+                <ScalarProperty Name="Image_Position" ColumnName="Image Position" />
+                <ScalarProperty Name="Image_Src" ColumnName="Image Src" />
+                <ScalarProperty Name="Variant_Barcode" ColumnName="Variant Barcode" />
+                <ScalarProperty Name="Variant_Taxable" ColumnName="Variant Taxable" />
+                <ScalarProperty Name="Variant_Requires_Shipping" ColumnName="Variant Requires Shipping" />
+                <ScalarProperty Name="Variant_Compare_At_Price" ColumnName="Variant Compare At Price" />
+                <ScalarProperty Name="Variant_Price" ColumnName="Variant Price" />
+                <ScalarProperty Name="Variant_Fulfillment_Service" ColumnName="Variant Fulfillment Service" />
+                <ScalarProperty Name="Variant_Inventory_Policy" ColumnName="Variant Inventory Policy" />
+                <ScalarProperty Name="Variant_Inventory_Qty" ColumnName="Variant Inventory Qty" />
+                <ScalarProperty Name="Variant_Inventory_Tracker" ColumnName="Variant Inventory Tracker" />
+                <ScalarProperty Name="Variant_Grams" ColumnName="Variant Grams" />
+                <ScalarProperty Name="Variant_SKU" ColumnName="Variant SKU" />
+                <ScalarProperty Name="Option3_Value" ColumnName="Option3 Value" />
+                <ScalarProperty Name="Option3_Name" ColumnName="Option3 Name" />
+                <ScalarProperty Name="Option2_Value" ColumnName="Option2 Value" />
+                <ScalarProperty Name="Option2_Name" ColumnName="Option2 Name" />
+                <ScalarProperty Name="Option1_Value" ColumnName="Option1 Value" />
+                <ScalarProperty Name="Option1_Name" ColumnName="Option1 Name" />
+                <ScalarProperty Name="Published" ColumnName="Published" />
+                <ScalarProperty Name="Tags" ColumnName="Tags" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="Body__HTML_" ColumnName="Body (HTML)" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Handle" ColumnName="Handle" />
+                <ScalarProperty Name="index" ColumnName="index" />
+                <ScalarProperty Name="hola" ColumnName="hola" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Productos6">
+            <EntityTypeMapping TypeName="listaProductosModel.Productos6">
+              <MappingFragment StoreEntitySet="Productos6">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Cost_per_item" ColumnName="Cost per item" />
+                <ScalarProperty Name="Variant_Tax_Code" ColumnName="Variant Tax Code" />
+                <ScalarProperty Name="Variant_Weight_Unit" ColumnName="Variant Weight Unit" />
+                <ScalarProperty Name="Variant_Image" ColumnName="Variant Image" />
+                <ScalarProperty Name="Google_Shopping___Custom_Label_4" ColumnName="Google Shopping / Custom Label 4" />
+                <ScalarProperty Name="Google_Shopping___Custom_Label_3" ColumnName="Google Shopping / Custom Label 3" />
+                <ScalarProperty Name="Google_Shopping___Custom_Label_2" ColumnName="Google Shopping / Custom Label 2" />
+                <ScalarProperty Name="Google_Shopping___Custom_Label_1" ColumnName="Google Shopping / Custom Label 1" />
+                <ScalarProperty Name="Google_Shopping___Custom_Label_0" ColumnName="Google Shopping / Custom Label 0" />
+                <ScalarProperty Name="Google_Shopping___Custom_Product" ColumnName="Google Shopping / Custom Product" />
+                <ScalarProperty Name="Google_Shopping___Condition" ColumnName="Google Shopping / Condition" />
+                <ScalarProperty Name="Google_Shopping___AdWords_Labels" ColumnName="Google Shopping / AdWords Labels" />
+                <ScalarProperty Name="Google_Shopping___AdWords_Grouping" ColumnName="Google Shopping / AdWords Grouping" />
+                <ScalarProperty Name="Google_Shopping___MPN" ColumnName="Google Shopping / MPN" />
+                <ScalarProperty Name="Google_Shopping___Age_Group" ColumnName="Google Shopping / Age Group" />
+                <ScalarProperty Name="Google_Shopping___Gender" ColumnName="Google Shopping / Gender" />
+                <ScalarProperty Name="Google_Shopping___Google_Product_Category" ColumnName="Google Shopping / Google Product Category" />
+                <ScalarProperty Name="SEO_Description" ColumnName="SEO Description" />
+                <ScalarProperty Name="SEO_Title" ColumnName="SEO Title" />
+                <ScalarProperty Name="Gift_Card" ColumnName="Gift Card" />
+                <ScalarProperty Name="Image_Alt_Text" ColumnName="Image Alt Text" />
+                <ScalarProperty Name="Image_Position" ColumnName="Image Position" />
+                <ScalarProperty Name="Image_Src" ColumnName="Image Src" />
+                <ScalarProperty Name="Variant_Barcode" ColumnName="Variant Barcode" />
+                <ScalarProperty Name="Variant_Taxable" ColumnName="Variant Taxable" />
+                <ScalarProperty Name="Variant_Requires_Shipping" ColumnName="Variant Requires Shipping" />
+                <ScalarProperty Name="Variant_Compare_At_Price" ColumnName="Variant Compare At Price" />
+                <ScalarProperty Name="Variant_Price" ColumnName="Variant Price" />
+                <ScalarProperty Name="Variant_Fulfillment_Service" ColumnName="Variant Fulfillment Service" />
+                <ScalarProperty Name="Variant_Inventory_Policy" ColumnName="Variant Inventory Policy" />
+                <ScalarProperty Name="Variant_Inventory_Qty" ColumnName="Variant Inventory Qty" />
+                <ScalarProperty Name="Variant_Inventory_Tracker" ColumnName="Variant Inventory Tracker" />
+                <ScalarProperty Name="Variant_Grams" ColumnName="Variant Grams" />
+                <ScalarProperty Name="Variant_SKU" ColumnName="Variant SKU" />
+                <ScalarProperty Name="Option3_Value" ColumnName="Option3 Value" />
+                <ScalarProperty Name="Option3_Name" ColumnName="Option3 Name" />
+                <ScalarProperty Name="Option2_Value" ColumnName="Option2 Value" />
+                <ScalarProperty Name="Option2_Name" ColumnName="Option2 Name" />
+                <ScalarProperty Name="Option1_Value" ColumnName="Option1 Value" />
+                <ScalarProperty Name="Option1_Name" ColumnName="Option1 Name" />
+                <ScalarProperty Name="Published" ColumnName="Published" />
+                <ScalarProperty Name="Tags" ColumnName="Tags" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+                <ScalarProperty Name="Body__HTML_" ColumnName="Body (HTML)" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Handle" ColumnName="Handle" />
+                <ScalarProperty Name="index" ColumnName="index" />
+                <ScalarProperty Name="level_0" ColumnName="level_0" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

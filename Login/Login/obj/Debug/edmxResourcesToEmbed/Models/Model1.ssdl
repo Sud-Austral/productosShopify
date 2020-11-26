@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="listaProductosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'listaProductos.dbo.ProductosShopify' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="ProductosShopify">
+          <Property Name="index" Type="bigint" />
+          <Property Name="Handle" Type="varchar(max)" />
+          <Property Name="Title" Type="varchar(max)" />
+          <Property Name="Body (HTML)" Type="varchar(max)" />
+          <Property Name="Vendor" Type="varchar(max)" />
+          <Property Name="Type" Type="varchar(max)" />
+          <Property Name="Tags" Type="varchar(max)" />
+          <Property Name="Published" Type="bit" />
+          <Property Name="Option1 Name" Type="varchar(max)" />
+          <Property Name="Option1 Value" Type="varchar(max)" />
+          <Property Name="Option2 Name" Type="varchar(max)" />
+          <Property Name="Option2 Value" Type="varchar(max)" />
+          <Property Name="Option3 Name" Type="varchar(max)" />
+          <Property Name="Option3 Value" Type="varchar(max)" />
+          <Property Name="Variant SKU" Type="varchar(max)" />
+          <Property Name="Variant Grams" Type="float" />
+          <Property Name="Variant Inventory Tracker" Type="varchar(max)" />
+          <Property Name="Variant Inventory Qty" Type="float" />
+          <Property Name="Variant Inventory Policy" Type="varchar(max)" />
+          <Property Name="Variant Fulfillment Service" Type="varchar(max)" />
+          <Property Name="Variant Price" Type="float" />
+          <Property Name="Variant Compare At Price" Type="float" />
+          <Property Name="Variant Requires Shipping" Type="bit" />
+          <Property Name="Variant Taxable" Type="bit" />
+          <Property Name="Variant Barcode" Type="float" />
+          <Property Name="Image Src" Type="varchar(max)" />
+          <Property Name="Image Position" Type="float" />
+          <Property Name="Image Alt Text" Type="float" />
+          <Property Name="Gift Card" Type="bit" />
+          <Property Name="SEO Title" Type="float" />
+          <Property Name="SEO Description" Type="float" />
+          <Property Name="Google Shopping / Google Product Category" Type="float" />
+          <Property Name="Google Shopping / Gender" Type="float" />
+          <Property Name="Google Shopping / Age Group" Type="float" />
+          <Property Name="Google Shopping / MPN" Type="float" />
+          <Property Name="Google Shopping / AdWords Grouping" Type="float" />
+          <Property Name="Google Shopping / AdWords Labels" Type="float" />
+          <Property Name="Google Shopping / Condition" Type="float" />
+          <Property Name="Google Shopping / Custom Product" Type="float" />
+          <Property Name="Google Shopping / Custom Label 0" Type="float" />
+          <Property Name="Google Shopping / Custom Label 1" Type="float" />
+          <Property Name="Google Shopping / Custom Label 2" Type="float" />
+          <Property Name="Google Shopping / Custom Label 3" Type="float" />
+          <Property Name="Google Shopping / Custom Label 4" Type="float" />
+          <Property Name="Variant Image" Type="float" />
+          <Property Name="Variant Weight Unit" Type="varchar(max)" />
+          <Property Name="Variant Tax Code" Type="float" />
+          <Property Name="Cost per item" Type="float" />
+          <Property Name="Status" Type="varchar(max)" />
+        </EntityType>-->
+  <EntityContainer Name="listaProductosModelStoreContainer" />
+</Schema>

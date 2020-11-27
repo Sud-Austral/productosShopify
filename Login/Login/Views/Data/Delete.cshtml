@@ -1,0 +1,120 @@
+﻿@model Login.Models.Data
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Data</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.index)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.index)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Unnamed__0)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unnamed__0)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.id_data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Desarrollo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Desarrollo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Investigación)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Investigación)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Breve_Descripción)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Breve_Descripción)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Slogan___Cita)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Slogan___Cita)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vistas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vistas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Repositorio_Dropbox)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Repositorio_Dropbox)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Link_Logo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Link_Logo)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

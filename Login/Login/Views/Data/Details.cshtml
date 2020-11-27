@@ -1,0 +1,114 @@
+﻿@model Login.Models.Data
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Data</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.index)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.index)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Unnamed__0)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unnamed__0)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.id_data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Desarrollo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Desarrollo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Investigación)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Investigación)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Breve_Descripción)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Breve_Descripción)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Slogan___Cita)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Slogan___Cita)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vistas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vistas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Repositorio_Dropbox)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Repositorio_Dropbox)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Link_Logo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Link_Logo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

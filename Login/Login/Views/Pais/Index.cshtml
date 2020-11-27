@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Login.Models.Pais>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.index)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Unnamed__0)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.País)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_país)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.index)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Unnamed__0)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.País)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_país)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

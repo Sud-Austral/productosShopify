@@ -1,0 +1,136 @@
+﻿@model Login.Models.Investigacio
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Investigacio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.index)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.index)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.N_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.N_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tema_Investigación_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tema_Investigación_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Responsables_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Responsables_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_inicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_inicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Termino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Termino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Chile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Chile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Panamá_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Panamá_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Guatemala)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Guatemala)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Honduras)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Honduras)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.El_Salvador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.El_Salvador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Link_1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Link_1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Link_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Link_2)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,141 @@
+﻿@model IEnumerable<Login.Models.Prioridad>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.index)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Unnamed__0)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Data)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Producto_Previos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Secuencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.País)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Integrado_PRODUCTOS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prioridad1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Avance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Responsable_Desarrollo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Responsable_Información)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tecnología)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tareas_Elementos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Columna1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tecnología2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha_estimada)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha_Actualizacion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.index)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Unnamed__0)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Data)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Producto_Previos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Secuencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.País)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Integrado_PRODUCTOS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_producto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prioridad1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Avance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Responsable_Desarrollo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Responsable_Información)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tecnología)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tareas_Elementos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Columna1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tecnología2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha_estimada)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha_Actualizacion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

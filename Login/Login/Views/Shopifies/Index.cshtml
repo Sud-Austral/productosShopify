@@ -1,0 +1,333 @@
+﻿@model IEnumerable<Login.Models.Shopify>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.index)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_data)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Corr_Producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Data)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Producto_asociado_)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre_comercial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Variante)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Corr_variante)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_prod_var)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Avance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Responsable_Desarrollo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Responsable_Información)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PORTADA_SHOPIFY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Párrafo_enganche)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Variante_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Precio_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Variante_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Precio_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Variante_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Precio_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Variable_filtro1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Variable_filtro2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Variable_filtro3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripción__Indicar_qué_permite_ver_o_hacer_el_producto__)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CAR_Tipo_Prod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CAR_Var1_Disponible)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CAR_Periodo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CAR_Proveedor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CAR_Colección)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ESP_Tecnología)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Host_)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Link_Odoo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha_Publicación)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.País)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Escala_)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ESP_Periodo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ESP_Incluye)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ESP_Uso_Disp_)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ESP_Fuentes_)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACC_Recibirás)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACC_Licencia_uso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACC_Actualizaciones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACC_N__usuarios)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Etiquetas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Vistas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Repositorio_Dropbox)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Link_Logo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Observaciones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Miniatura)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.index)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_data)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Corr_Producto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Data)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_producto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Producto_asociado_)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre_comercial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Variante)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Corr_variante)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_prod_var)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Avance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Responsable_Desarrollo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Responsable_Información)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PORTADA_SHOPIFY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Párrafo_enganche)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Variante_1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Precio_1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Variante_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Precio_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Variante_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Precio_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Variable_filtro1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Variable_filtro2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Variable_filtro3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripción__Indicar_qué_permite_ver_o_hacer_el_producto__)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CAR_Tipo_Prod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CAR_Var1_Disponible)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CAR_Periodo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CAR_Proveedor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CAR_Colección)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ESP_Tecnología)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Host_)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Link_Odoo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha_Publicación)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.País)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Escala_)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ESP_Periodo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ESP_Incluye)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ESP_Uso_Disp_)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ESP_Fuentes_)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACC_Recibirás)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACC_Licencia_uso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACC_Actualizaciones)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACC_N__usuarios)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Etiquetas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vistas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Repositorio_Dropbox)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Link_Logo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Observaciones)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Miniatura)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

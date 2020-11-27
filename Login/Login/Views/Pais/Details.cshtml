@@ -1,0 +1,50 @@
+﻿@model Login.Models.Pais
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pais</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.index)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.index)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Unnamed__0)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unnamed__0)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.País)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.País)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.id_país)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_país)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

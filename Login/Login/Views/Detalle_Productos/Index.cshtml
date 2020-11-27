@@ -1,0 +1,105 @@
+﻿@model IEnumerable<Login.Models.Detalle_Productos>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.index)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Unnamed__0)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Data)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Plazo_Producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Secciones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sub_secciones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Variables)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fuente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Situación_Variable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha_Actualización)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Observaciones)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.index)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Unnamed__0)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Data)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_producto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Plazo_Producto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Producto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Secciones)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sub_secciones)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Variables)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fuente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Situación_Variable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha_Actualización)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Observaciones)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

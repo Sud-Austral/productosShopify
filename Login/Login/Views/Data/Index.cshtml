@@ -1,0 +1,99 @@
+﻿@model IEnumerable<Login.Models.Data>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.index)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Unnamed__0)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Data1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_data)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Desarrollo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Investigación)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Breve_Descripción)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Slogan___Cita)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Vistas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Repositorio_Dropbox)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Link_Logo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.index)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Unnamed__0)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Data1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_data)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Desarrollo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Investigación)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Breve_Descripción)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Slogan___Cita)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vistas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Repositorio_Dropbox)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Link_Logo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

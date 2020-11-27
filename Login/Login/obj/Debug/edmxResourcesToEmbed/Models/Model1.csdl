@@ -1,4 +1,342 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="listaProductosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityContainer Name="listaProductosEntities" annotation:LazyLoadingEnabled="true" />
+  <EntityContainer Name="listaProductosEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BDs" EntityType="listaProductosModel.BD" />
+    <EntitySet Name="Datas" EntityType="listaProductosModel.Data" />
+    <EntitySet Name="Detalle_Productos" EntityType="listaProductosModel.Detalle_Productos" />
+    <EntitySet Name="Investigacios" EntityType="listaProductosModel.Investigacio" />
+    <EntitySet Name="Monitoreo_Invest" EntityType="listaProductosModel.Monitoreo_Invest" />
+    <EntitySet Name="Paises" EntityType="listaProductosModel.Pais" />
+    <EntitySet Name="Personas" EntityType="listaProductosModel.Persona" />
+    <EntitySet Name="Prioridads" EntityType="listaProductosModel.Prioridad" />
+    <EntitySet Name="Productos" EntityType="listaProductosModel.Producto" />
+    <EntitySet Name="Shopifies" EntityType="listaProductosModel.Shopify" />
+    <EntitySet Name="ShopifyOriginals" EntityType="listaProductosModel.ShopifyOriginal" />
+    <EntitySet Name="Variables" EntityType="listaProductosModel.Variable" />
+  </EntityContainer>
+  <EntityType Name="BD">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="index" Type="Int64" />
+    <Property Name="Unnamed__0" Type="Double" />
+    <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Actualización_" Type="DateTime" Precision="3" />
+    <Property Name="Responsable" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Observación_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Acción" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Monitoreo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Data">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="index" Type="Int64" />
+    <Property Name="Unnamed__0" Type="Double" />
+    <Property Name="Data1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_data" Type="Int64" />
+    <Property Name="Estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Desarrollo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Investigación" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Breve_Descripción" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Slogan___Cita" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Vistas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Repositorio_Dropbox" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Link_Logo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Detalle_Productos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="index" Type="Int64" />
+    <Property Name="Unnamed__0" Type="Double" />
+    <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Plazo_Producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Secciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Sub_secciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variables" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fuente" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Situación_Variable" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Actualización" Type="DateTime" Precision="3" />
+    <Property Name="Observaciones" Type="Double" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Investigacio">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="index" Type="Int64" />
+    <Property Name="N_" Type="Int64" />
+    <Property Name="Tema_Investigación_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Responsables_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_inicio" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Termino" Type="DateTime" Precision="3" />
+    <Property Name="Chile" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Panamá_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Guatemala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Honduras" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="El_Salvador" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Link_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Link_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Monitoreo_Invest">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="index" Type="Int64" />
+    <Property Name="N_" Type="Double" />
+    <Property Name="Tema_institución_Investigación_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Responsable" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_inicio" Type="DateTime" Precision="3" />
+    <Property Name="Fecha_avance" Type="DateTime" Precision="3" />
+    <Property Name="Fecha_Termino" Type="DateTime" Precision="3" />
+    <Property Name="Comentario" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Acción" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Seguimiento" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Pais">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="index" Type="Int64" />
+    <Property Name="Unnamed__0" Type="Double" />
+    <Property Name="País" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_país" Type="Int64" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="index" Type="Int64" />
+    <Property Name="Unnamed__0" Type="Double" />
+    <Property Name="Nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Apellido" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Completo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Prioridad">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="index" Type="Int64" />
+    <Property Name="Unnamed__0" Type="Double" />
+    <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Producto_Previos" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Secuencia" Type="Double" />
+    <Property Name="País" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Integrado_PRODUCTOS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Prioridad1" Type="Double" />
+    <Property Name="Estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Avance" Type="Double" />
+    <Property Name="Responsable_Desarrollo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Responsable_Información" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Tecnología" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Tareas_Elementos" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Columna1" Type="Double" />
+    <Property Name="Tecnología2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_estimada" Type="Double" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha_Actualizacion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="index" Type="Int64" />
+    <Property Name="id_data" Type="Int64" />
+    <Property Name="id_pais" Type="Int64" />
+    <Property Name="Corr_Producto" Type="Int64" />
+    <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="País" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Producto_asociado_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_comercial" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Avance" Type="Double" />
+    <Property Name="Responsable_Desarrollo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Responsable_Información" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Tecnología" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Host_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Link_Odoo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Publicación" Type="Double" />
+    <Property Name="Escala_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Periodo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Actualizaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fuentes_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Ref_principal_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Competencia_o_material_vinculado_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Vistas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Repositorio_Dropbox" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Link_Logo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Observaciones" Type="Double" />
+    <Property Name="Miniatura" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PORTADA_SHOPIFY" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Párrafo_enganche" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variante_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Precio_1__USD_" Type="Double" />
+    <Property Name="Variante_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Precio_2__USD_" Type="Double" />
+    <Property Name="Variante_3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Precio_3__USD_" Type="Double" />
+    <Property Name="Variable_filtro1" Type="Double" />
+    <Property Name="Variable_filtro2" Type="Double" />
+    <Property Name="Variable_filtro3" Type="Double" />
+    <Property Name="Descripción__Indicar_qué_permite_ver_o_hacer_el_producto__2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_Tipo_Prod" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_Var1_Disponible" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_Var2_Disponible" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_Var3_Disponible" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_Periodo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_Proveedor" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_Colección" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ESP_Tecnología" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ESP_Incluye" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ESP_Uso_Disp_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ESP_Fuentes_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ACC_Recibirás" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ACC_Licencia_uso" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ACC_Actualizaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ACC_N__usuarios" Type="Double" />
+    <Property Name="Etiquetas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Shopify">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="index" Type="Int64" />
+    <Property Name="id_data" Type="Int64" />
+    <Property Name="Corr_Producto" Type="Int64" />
+    <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Producto_asociado_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_comercial" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variante" Type="Double" />
+    <Property Name="Corr_variante" Type="Double" />
+    <Property Name="id_prod_var" Type="Double" />
+    <Property Name="Estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Avance" Type="Double" />
+    <Property Name="Responsable_Desarrollo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Responsable_Información" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PORTADA_SHOPIFY" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Párrafo_enganche" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variante_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Precio_1" Type="Double" />
+    <Property Name="Variante_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Precio_2" Type="Double" />
+    <Property Name="Variante_3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Precio_3" Type="Double" />
+    <Property Name="Variable_filtro1" Type="Double" />
+    <Property Name="Variable_filtro2" Type="Double" />
+    <Property Name="Variable_filtro3" Type="Double" />
+    <Property Name="Descripción__Indicar_qué_permite_ver_o_hacer_el_producto__" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_Tipo_Prod" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_Var1_Disponible" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_Periodo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_Proveedor" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_Colección" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ESP_Tecnología" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Host_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Link_Odoo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Publicación" Type="Double" />
+    <Property Name="País" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Escala_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ESP_Periodo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ESP_Incluye" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ESP_Uso_Disp_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ESP_Fuentes_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ACC_Recibirás" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ACC_Licencia_uso" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ACC_Actualizaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ACC_N__usuarios" Type="Double" />
+    <Property Name="Etiquetas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Vistas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Repositorio_Dropbox" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Link_Logo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Observaciones" Type="Double" />
+    <Property Name="Miniatura" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="ShopifyOriginal">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="index" Type="Int64" />
+    <Property Name="Handle" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Body__HTML_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Vendor" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Tags" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Published" Type="Boolean" />
+    <Property Name="Option1_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Option1_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Option2_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Option2_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Option3_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Option3_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variant_SKU" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variant_Grams" Type="Double" />
+    <Property Name="Variant_Inventory_Tracker" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variant_Inventory_Qty" Type="Double" />
+    <Property Name="Variant_Inventory_Policy" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variant_Fulfillment_Service" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variant_Price" Type="Double" />
+    <Property Name="Variant_Compare_At_Price" Type="Double" />
+    <Property Name="Variant_Requires_Shipping" Type="Boolean" />
+    <Property Name="Variant_Taxable" Type="Boolean" />
+    <Property Name="Variant_Barcode" Type="Double" />
+    <Property Name="Image_Src" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Image_Position" Type="Double" />
+    <Property Name="Image_Alt_Text" Type="Double" />
+    <Property Name="Gift_Card" Type="Boolean" />
+    <Property Name="SEO_Title" Type="Double" />
+    <Property Name="SEO_Description" Type="Double" />
+    <Property Name="Google_Shopping___Google_Product_Category" Type="Double" />
+    <Property Name="Google_Shopping___Gender" Type="Double" />
+    <Property Name="Google_Shopping___Age_Group" Type="Double" />
+    <Property Name="Google_Shopping___MPN" Type="Double" />
+    <Property Name="Google_Shopping___AdWords_Grouping" Type="Double" />
+    <Property Name="Google_Shopping___AdWords_Labels" Type="Double" />
+    <Property Name="Google_Shopping___Condition" Type="Double" />
+    <Property Name="Google_Shopping___Custom_Product" Type="Double" />
+    <Property Name="Google_Shopping___Custom_Label_0" Type="Double" />
+    <Property Name="Google_Shopping___Custom_Label_1" Type="Double" />
+    <Property Name="Google_Shopping___Custom_Label_2" Type="Double" />
+    <Property Name="Google_Shopping___Custom_Label_3" Type="Double" />
+    <Property Name="Google_Shopping___Custom_Label_4" Type="Double" />
+    <Property Name="Variant_Image" Type="Double" />
+    <Property Name="Variant_Weight_Unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variant_Tax_Code" Type="Double" />
+    <Property Name="Cost_per_item" Type="Double" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Variable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="index" Type="Int64" />
+    <Property Name="Unnamed__0" Type="Double" />
+    <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Producto" Type="Double" />
+    <Property Name="Sección" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Verificador" Type="Int64" />
+    <Property Name="Variables" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ID_VAR" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
 </Schema>

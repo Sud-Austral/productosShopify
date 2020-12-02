@@ -10,33 +10,45 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Nombre de aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+    <div class="container" style="padding-left: 0">
+        <div class="row justify-content-md-center">
+            <div class="col col-1.5">
+                <div class="nav-header">
+                    <img src="di-br.png" width="150" />
+                </div>
+                <ul class="nav flex-column" style="position:absolute">
+                    <li>@Html.ActionLink("Inicio", "Index")</li>
+                    <li>@Html.ActionLink("Cuenta", "Index", "Account")</li>
+                    <li>@Html.ActionLink("Bases de Datos", "Index", "BDs")</li>
+                    <li>@Html.ActionLink("Data", "Index", "Data")</li>
+                    <li>@Html.ActionLink("Detalle Productos", "Index", "Detalle_Productos")</li>
+                    <li>@Html.ActionLink("Investigación", "Index", "Investigacion")</li>
+                    <li>@Html.ActionLink("Administrar", "Index", "Manage")</li>
+                    <li>@Html.ActionLink("Monitoreo", "Index", "Monitoreo")</li>
+                    <li>@Html.ActionLink("Pais", "Index", "Pais")</li>
+                    <li>@Html.ActionLink("Personas", "Index", "Personas")</li>
+                    <li>@Html.ActionLink("Prioridades", "Index", "Prioridads")</li>
+                    <li>@Html.ActionLink("Productos", "Index", "Productos")</li>
+                    <li>@Html.ActionLink("Shopifies", "Index", "Shopifies")</li>
+                    <li>@Html.ActionLink("Shopify Originals", "Index", "ShopifyOriginals")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+            </div>
+            <div class="col-10">
+                <div class="container body-content">
+                    
+                    @RenderBody()
+                    <hr />
+                    <footer>
+                        <p>&copy; @DateTime.Now.Year - Data Intelligence</p>
+                    </footer>
+                </div>
+
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
-        </footer>
-    </div>
+    
+
+    
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

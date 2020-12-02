@@ -1,0 +1,186 @@
+﻿@model Login.Models.D_PRIORIZACION
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>D_PRIORIZACION</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.producto_previo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.producto_previo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.secuencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.secuencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.integrado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.integrado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.id_producto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_producto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prioridad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prioridad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.avance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.avance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.responsable_desarrollo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.responsable_desarrollo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.responsable_informacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.responsable_informacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tecnologia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tecnologia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tarea)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tarea)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.db)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.db)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.plataforma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.plataforma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.control_calidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.control_calidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.odoo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.odoo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.shopify)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.shopify)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_estimada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha_estimada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_actualizacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha_actualizacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.D_Data.data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.D_Data.data)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

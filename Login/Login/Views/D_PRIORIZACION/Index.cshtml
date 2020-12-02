@@ -1,0 +1,153 @@
+﻿@model IEnumerable<Login.Models.D_PRIORIZACION>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.producto_previo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.secuencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pais)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.integrado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prioridad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.avance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.responsable_desarrollo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.responsable_informacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tecnologia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tarea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.db)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.plataforma)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.control_calidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.odoo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.shopify)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_estimada)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_actualizacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.D_Data.data)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.producto_previo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.secuencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pais)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.integrado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_producto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.prioridad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.avance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.responsable_desarrollo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.responsable_informacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tecnologia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tarea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.db)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.plataforma)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.control_calidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.odoo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.shopify)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha_estimada)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha_actualizacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.D_Data.data)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

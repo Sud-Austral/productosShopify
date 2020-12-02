@@ -1,0 +1,87 @@
+﻿@model IEnumerable<Login.Models.D_INVESTIGACION>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.numero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tema)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.responsable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_inicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_avance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_termino)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.comentario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.accion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.seguimiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.D_Data.data)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.numero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tema)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.responsable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha_inicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha_avance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha_termino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.comentario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.accion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.seguimiento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.D_Data.data)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,464 @@
+﻿@model Login.Models.D_PRODUCTO
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>D_PRODUCTO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.corr_Producto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.corr_Producto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.id_producto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_producto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.producto_asociado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.producto_asociado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre_comercial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre_comercial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.avance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.avance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.responsable_desarrollo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.responsable_desarrollo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.responsable_informacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.responsable_informacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tecnologia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tecnologia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.host)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.host)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.link_odoo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.link_odoo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_publicación)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha_publicación)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.escala)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.escala)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.periodo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.periodo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.actualizaciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.actualizaciones)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo_producto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo_producto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fuentes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fuentes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ref_principal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ref_principal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.competencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.competencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vista)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.repositorio_dropbox)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.repositorio_dropbox)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.logo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.logo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.observaciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.observaciones)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.miniatura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.miniatura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.portada_shopify)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.portada_shopify)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.parrafo_enganche)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.parrafo_enganche)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.variante_1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.variante_1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precio1_usd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precio1_usd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.variante_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.variante_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precio2_usd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precio2_usd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.variante_3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.variante_3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precio3_usd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precio3_usd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.variable_filtro1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.variable_filtro1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.variable_filtro2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.variable_filtro2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.variable_filtro3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.variable_filtro3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CAR_tipo_prod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CAR_tipo_prod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CAR_var1_disponible)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CAR_var1_disponible)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CAR_var2_disponible)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CAR_var2_disponible)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CAR_var3_disponible)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CAR_var3_disponible)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CAR_periodo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CAR_periodo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CAR_proveedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CAR_proveedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CAR_colección)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CAR_colección)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ESP_tecnología)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ESP_tecnología)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ESP_incluye)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ESP_incluye)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ESP_uso_disp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ESP_uso_disp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ESP_fuentes_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ESP_fuentes_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ACC_recibirás)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ACC_recibirás)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ACC_licencia_uso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ACC_licencia_uso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ACC_actualizaciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ACC_actualizaciones)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ACC_numero_usuarios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ACC_numero_usuarios)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.etiquetas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.etiquetas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.D_PRIORIZACION.producto_previo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.D_PRIORIZACION.producto_previo)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

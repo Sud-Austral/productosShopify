@@ -1,0 +1,410 @@
+﻿@model Login.Models.D_SHOPIFY
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>D_SHOPIFY</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Handle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Handle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Body_HTML)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Body_HTML)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vendor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vendor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tags)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tags)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Published)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Published)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Option1_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Option1_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Option1_Value)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Option1_Value)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Option2_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Option2_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Option2_Value)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Option2_Value)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Option3_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Option3_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Option3_Value)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Option3_Value)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variant_SKU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variant_SKU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variant_Grams)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variant_Grams)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variant_Inventory_Tracker)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variant_Inventory_Tracker)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variant_Inventory_Qty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variant_Inventory_Qty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variant_Inventory_Policy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variant_Inventory_Policy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variant_Fulfillment_Service)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variant_Fulfillment_Service)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variant_Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variant_Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variant_Compare_At_Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variant_Compare_At_Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variant_Requires_Shipping)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variant_Requires_Shipping)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variant_Taxable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variant_Taxable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variant_Barcode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variant_Barcode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image_Src)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image_Src)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image_Position)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image_Position)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image_Alt_Text)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image_Alt_Text)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gift_Card)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gift_Card)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SEO_Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SEO_Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SEO_Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SEO_Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Google_Shopping_Google_Product_Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Google_Shopping_Google_Product_Category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Google_Shopping_Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Google_Shopping_Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Google_Shopping_Age_Group)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Google_Shopping_Age_Group)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Google_Shopping_MPN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Google_Shopping_MPN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Google_Shopping_AdWords_Grouping)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Google_Shopping_AdWords_Grouping)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Google_Shopping_AdWords_Labels)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Google_Shopping_AdWords_Labels)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Google_Shopping_Condition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Google_Shopping_Condition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Google_Shopping_Custom_Product)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Google_Shopping_Custom_Product)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Google_Shopping_Custom_Label_0)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Google_Shopping_Custom_Label_0)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Google_Shopping_Custom_Label_1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Google_Shopping_Custom_Label_1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Google_Shopping_Custom_Label_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Google_Shopping_Custom_Label_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Google_Shopping_Custom_Label_3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Google_Shopping_Custom_Label_3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Google_Shopping_Custom_Label_4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Google_Shopping_Custom_Label_4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variant_Image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variant_Image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variant_Weight_Unit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variant_Weight_Unit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Variant_Tax_Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Variant_Tax_Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost_per_item)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost_per_item)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.D_PRODUCTO.data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.D_PRODUCTO.data)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="listaProductosModel1StoreContainer" CdmEntityContainer="listaProductosEntities1">
+    <EntitySetMapping Name="D_Data">
+      <EntityTypeMapping TypeName="listaProductosModel1.D_Data">
+        <MappingFragment StoreEntitySet="D_Data">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="id_data" ColumnName="id_data" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="desarrollo" ColumnName="desarrollo" />
+          <ScalarProperty Name="investigacion" ColumnName="investigacion" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="slogan" ColumnName="slogan" />
+          <ScalarProperty Name="vista" ColumnName="vista" />
+          <ScalarProperty Name="repositorio_dropbox" ColumnName="repositorio_dropbox" />
+          <ScalarProperty Name="logo" ColumnName="logo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="D_INVESTIGACION">
+      <EntityTypeMapping TypeName="listaProductosModel1.D_INVESTIGACION">
+        <MappingFragment StoreEntitySet="D_INVESTIGACION">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="tema" ColumnName="tema" />
+          <ScalarProperty Name="responsable" ColumnName="responsable" />
+          <ScalarProperty Name="fecha_inicio" ColumnName="fecha_inicio" />
+          <ScalarProperty Name="fecha_avance" ColumnName="fecha_avance" />
+          <ScalarProperty Name="fecha_termino" ColumnName="fecha_termino" />
+          <ScalarProperty Name="comentario" ColumnName="comentario" />
+          <ScalarProperty Name="accion" ColumnName="accion" />
+          <ScalarProperty Name="seguimiento" ColumnName="seguimiento" />
+          <ScalarProperty Name="D_Data_id_data" ColumnName="D_Data_id_data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="D_PRIORIZACION">
+      <EntityTypeMapping TypeName="listaProductosModel1.D_PRIORIZACION">
+        <MappingFragment StoreEntitySet="D_PRIORIZACION">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="producto_previo" ColumnName="producto_previo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="secuencia" ColumnName="secuencia" />
+          <ScalarProperty Name="pais" ColumnName="pais" />
+          <ScalarProperty Name="integrado" ColumnName="integrado" />
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="prioridad" ColumnName="prioridad" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="avance" ColumnName="avance" />
+          <ScalarProperty Name="responsable_desarrollo" ColumnName="responsable_desarrollo" />
+          <ScalarProperty Name="responsable_informacion" ColumnName="responsable_informacion" />
+          <ScalarProperty Name="tecnologia" ColumnName="tecnologia" />
+          <ScalarProperty Name="tarea" ColumnName="tarea" />
+          <ScalarProperty Name="db" ColumnName="db" />
+          <ScalarProperty Name="plataforma" ColumnName="plataforma" />
+          <ScalarProperty Name="control_calidad" ColumnName="control_calidad" />
+          <ScalarProperty Name="odoo" ColumnName="odoo" />
+          <ScalarProperty Name="shopify" ColumnName="shopify" />
+          <ScalarProperty Name="fecha_estimada" ColumnName="fecha_estimada" />
+          <ScalarProperty Name="fecha_actualizacion" ColumnName="fecha_actualizacion" />
+          <ScalarProperty Name="D_Data_id_data" ColumnName="D_Data_id_data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="D_PRODUCTO">
+      <EntityTypeMapping TypeName="listaProductosModel1.D_PRODUCTO">
+        <MappingFragment StoreEntitySet="D_PRODUCTO">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="corr_Producto" ColumnName="corr_Producto" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="pais" ColumnName="pais" />
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="producto_asociado" ColumnName="producto_asociado" />
+          <ScalarProperty Name="nombre_comercial" ColumnName="nombre_comercial" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="avance" ColumnName="avance" />
+          <ScalarProperty Name="responsable_desarrollo" ColumnName="responsable_desarrollo" />
+          <ScalarProperty Name="responsable_informacion" ColumnName="responsable_informacion" />
+          <ScalarProperty Name="tecnologia" ColumnName="tecnologia" />
+          <ScalarProperty Name="host" ColumnName="host" />
+          <ScalarProperty Name="link_odoo" ColumnName="link_odoo" />
+          <ScalarProperty Name="fecha_publicación" ColumnName="fecha_publicación" />
+          <ScalarProperty Name="escala" ColumnName="escala" />
+          <ScalarProperty Name="periodo" ColumnName="periodo" />
+          <ScalarProperty Name="actualizaciones" ColumnName="actualizaciones" />
+          <ScalarProperty Name="tipo_producto" ColumnName="tipo_producto" />
+          <ScalarProperty Name="fuentes" ColumnName="fuentes" />
+          <ScalarProperty Name="ref_principal" ColumnName="ref_principal" />
+          <ScalarProperty Name="competencia" ColumnName="competencia" />
+          <ScalarProperty Name="vista" ColumnName="vista" />
+          <ScalarProperty Name="repositorio_dropbox" ColumnName="repositorio_dropbox" />
+          <ScalarProperty Name="logo" ColumnName="logo" />
+          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+          <ScalarProperty Name="miniatura" ColumnName="miniatura" />
+          <ScalarProperty Name="portada_shopify" ColumnName="portada_shopify" />
+          <ScalarProperty Name="parrafo_enganche" ColumnName="parrafo_enganche" />
+          <ScalarProperty Name="variante_1" ColumnName="variante_1" />
+          <ScalarProperty Name="precio1_usd" ColumnName="precio1_usd" />
+          <ScalarProperty Name="variante_2" ColumnName="variante_2" />
+          <ScalarProperty Name="precio2_usd" ColumnName="precio2_usd" />
+          <ScalarProperty Name="variante_3" ColumnName="variante_3" />
+          <ScalarProperty Name="precio3_usd" ColumnName="precio3_usd" />
+          <ScalarProperty Name="variable_filtro1" ColumnName="variable_filtro1" />
+          <ScalarProperty Name="variable_filtro2" ColumnName="variable_filtro2" />
+          <ScalarProperty Name="variable_filtro3" ColumnName="variable_filtro3" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="CAR_tipo_prod" ColumnName="CAR_tipo_prod" />
+          <ScalarProperty Name="CAR_var1_disponible" ColumnName="CAR_var1_disponible" />
+          <ScalarProperty Name="CAR_var2_disponible" ColumnName="CAR_var2_disponible" />
+          <ScalarProperty Name="CAR_var3_disponible" ColumnName="CAR_var3_disponible" />
+          <ScalarProperty Name="CAR_periodo" ColumnName="CAR_periodo" />
+          <ScalarProperty Name="CAR_proveedor" ColumnName="CAR_proveedor" />
+          <ScalarProperty Name="CAR_colección" ColumnName="CAR_colección" />
+          <ScalarProperty Name="ESP_tecnología" ColumnName="ESP_tecnología" />
+          <ScalarProperty Name="ESP_incluye" ColumnName="ESP_incluye" />
+          <ScalarProperty Name="ESP_uso_disp" ColumnName="ESP_uso_disp" />
+          <ScalarProperty Name="ESP_fuentes_" ColumnName="ESP_fuentes " />
+          <ScalarProperty Name="ACC_recibirás" ColumnName="ACC_recibirás" />
+          <ScalarProperty Name="ACC_licencia_uso" ColumnName="ACC_licencia_uso" />
+          <ScalarProperty Name="ACC_actualizaciones" ColumnName="ACC_actualizaciones" />
+          <ScalarProperty Name="ACC_numero_usuarios" ColumnName="ACC_numero_usuarios" />
+          <ScalarProperty Name="etiquetas" ColumnName="etiquetas" />
+          <ScalarProperty Name="D_PRIORIZACION_id_priorizacion" ColumnName="D_PRIORIZACION_id_priorizacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="D_SHOPIFY">
+      <EntityTypeMapping TypeName="listaProductosModel1.D_SHOPIFY">
+        <MappingFragment StoreEntitySet="D_SHOPIFY">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Handle" ColumnName="Handle" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Body_HTML" ColumnName="Body_HTML" />
+          <ScalarProperty Name="Vendor" ColumnName="Vendor" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Tags" ColumnName="Tags" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+          <ScalarProperty Name="Option1_Name" ColumnName="Option1_Name" />
+          <ScalarProperty Name="Option1_Value" ColumnName="Option1_Value" />
+          <ScalarProperty Name="Option2_Name" ColumnName="Option2_Name" />
+          <ScalarProperty Name="Option2_Value" ColumnName="Option2_Value" />
+          <ScalarProperty Name="Option3_Name" ColumnName="Option3_Name" />
+          <ScalarProperty Name="Option3_Value" ColumnName="Option3_Value" />
+          <ScalarProperty Name="Variant_SKU" ColumnName="Variant_SKU" />
+          <ScalarProperty Name="Variant_Grams" ColumnName="Variant_Grams" />
+          <ScalarProperty Name="Variant_Inventory_Tracker" ColumnName="Variant_Inventory_Tracker" />
+          <ScalarProperty Name="Variant_Inventory_Qty" ColumnName="Variant_Inventory_Qty" />
+          <ScalarProperty Name="Variant_Inventory_Policy" ColumnName="Variant_Inventory_Policy" />
+          <ScalarProperty Name="Variant_Fulfillment_Service" ColumnName="Variant_Fulfillment_Service" />
+          <ScalarProperty Name="Variant_Price" ColumnName="Variant_Price" />
+          <ScalarProperty Name="Variant_Compare_At_Price" ColumnName="Variant_Compare_At_Price" />
+          <ScalarProperty Name="Variant_Requires_Shipping" ColumnName="Variant_Requires_Shipping" />
+          <ScalarProperty Name="Variant_Taxable" ColumnName="Variant_Taxable" />
+          <ScalarProperty Name="Variant_Barcode" ColumnName="Variant_Barcode" />
+          <ScalarProperty Name="Image_Src" ColumnName="Image_Src" />
+          <ScalarProperty Name="Image_Position" ColumnName="Image_Position" />
+          <ScalarProperty Name="Image_Alt_Text" ColumnName="Image_Alt_Text" />
+          <ScalarProperty Name="Gift_Card" ColumnName="Gift_Card" />
+          <ScalarProperty Name="SEO_Title" ColumnName="SEO_Title" />
+          <ScalarProperty Name="SEO_Description" ColumnName="SEO_Description" />
+          <ScalarProperty Name="Google_Shopping_Google_Product_Category" ColumnName="Google_Shopping_Google_Product_Category" />
+          <ScalarProperty Name="Google_Shopping_Gender" ColumnName="Google_Shopping_Gender" />
+          <ScalarProperty Name="Google_Shopping_Age_Group" ColumnName="Google_Shopping_Age_Group" />
+          <ScalarProperty Name="Google_Shopping_MPN" ColumnName="Google_Shopping_MPN" />
+          <ScalarProperty Name="Google_Shopping_AdWords_Grouping" ColumnName="Google_Shopping_AdWords_Grouping" />
+          <ScalarProperty Name="Google_Shopping_AdWords_Labels" ColumnName="Google_Shopping_AdWords_Labels" />
+          <ScalarProperty Name="Google_Shopping_Condition" ColumnName="Google_Shopping_Condition" />
+          <ScalarProperty Name="Google_Shopping_Custom_Product" ColumnName="Google_Shopping_Custom_Product" />
+          <ScalarProperty Name="Google_Shopping_Custom_Label_0" ColumnName="Google_Shopping_Custom_Label_0" />
+          <ScalarProperty Name="Google_Shopping_Custom_Label_1" ColumnName="Google_Shopping_Custom_Label_1" />
+          <ScalarProperty Name="Google_Shopping_Custom_Label_2" ColumnName="Google_Shopping_Custom_Label_2" />
+          <ScalarProperty Name="Google_Shopping_Custom_Label_3" ColumnName="Google_Shopping_Custom_Label_3" />
+          <ScalarProperty Name="Google_Shopping_Custom_Label_4" ColumnName="Google_Shopping_Custom_Label_4" />
+          <ScalarProperty Name="Variant_Image" ColumnName="Variant_Image" />
+          <ScalarProperty Name="Variant_Weight_Unit" ColumnName="Variant_Weight_Unit" />
+          <ScalarProperty Name="Variant_Tax_Code" ColumnName="Variant_Tax_Code" />
+          <ScalarProperty Name="Cost_per_item" ColumnName="Cost_per_item" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="D_PRODUCTO_id_producto" ColumnName="D_PRODUCTO_id_producto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

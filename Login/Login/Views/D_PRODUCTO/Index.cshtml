@@ -1,0 +1,357 @@
+﻿@model IEnumerable<Login.Models.D_PRODUCTO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.corr_Producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.data)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pais)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.producto_asociado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre_comercial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.avance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.responsable_desarrollo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.responsable_informacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tecnologia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.host)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.link_odoo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_publicación)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.escala)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.periodo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.actualizaciones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tipo_producto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fuentes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ref_principal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.competencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.vista)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.repositorio_dropbox)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.logo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.observaciones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.miniatura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.portada_shopify)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.parrafo_enganche)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.variante_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.precio1_usd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.variante_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.precio2_usd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.variante_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.precio3_usd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.variable_filtro1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.variable_filtro2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.variable_filtro3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CAR_tipo_prod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CAR_var1_disponible)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CAR_var2_disponible)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CAR_var3_disponible)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CAR_periodo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CAR_proveedor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CAR_colección)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ESP_tecnología)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ESP_incluye)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ESP_uso_disp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ESP_fuentes_)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACC_recibirás)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACC_licencia_uso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACC_actualizaciones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACC_numero_usuarios)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.etiquetas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.D_PRIORIZACION.producto_previo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.corr_Producto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.data)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pais)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_producto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.producto_asociado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre_comercial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.avance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.responsable_desarrollo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.responsable_informacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tecnologia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.host)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.link_odoo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha_publicación)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.escala)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.periodo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.actualizaciones)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tipo_producto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fuentes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ref_principal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.competencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vista)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.repositorio_dropbox)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.logo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.observaciones)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.miniatura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.portada_shopify)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.parrafo_enganche)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.variante_1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.precio1_usd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.variante_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.precio2_usd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.variante_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.precio3_usd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.variable_filtro1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.variable_filtro2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.variable_filtro3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CAR_tipo_prod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CAR_var1_disponible)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CAR_var2_disponible)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CAR_var3_disponible)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CAR_periodo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CAR_proveedor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CAR_colección)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ESP_tecnología)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ESP_incluye)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ESP_uso_disp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ESP_fuentes_)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACC_recibirás)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACC_licencia_uso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACC_actualizaciones)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACC_numero_usuarios)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.etiquetas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.D_PRIORIZACION.producto_previo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

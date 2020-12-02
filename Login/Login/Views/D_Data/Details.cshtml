@@ -1,0 +1,98 @@
+﻿@model Login.Models.D_Data
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>D_Data</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.id_data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.desarrollo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.desarrollo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.investigacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.investigacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.slogan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.slogan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vista)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.repositorio_dropbox)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.repositorio_dropbox)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.logo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.logo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="listaProductosModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="D_Data">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="data" Type="varchar(max)" />
+    <Property Name="id_data" Type="varchar(max)" />
+    <Property Name="estado" Type="varchar(max)" />
+    <Property Name="desarrollo" Type="varchar(max)" />
+    <Property Name="investigacion" Type="varchar(max)" />
+    <Property Name="descripcion" Type="varchar(max)" />
+    <Property Name="slogan" Type="varchar(max)" />
+    <Property Name="vista" Type="varchar(max)" />
+    <Property Name="repositorio_dropbox" Type="varchar(max)" />
+    <Property Name="logo" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="D_INVESTIGACION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="numero" Type="float" />
+    <Property Name="tema" Type="varchar(max)" />
+    <Property Name="responsable" Type="varchar(max)" />
+    <Property Name="fecha_inicio" Type="datetime" />
+    <Property Name="fecha_avance" Type="datetime" />
+    <Property Name="fecha_termino" Type="datetime" />
+    <Property Name="comentario" Type="varchar(max)" />
+    <Property Name="accion" Type="varchar(max)" />
+    <Property Name="seguimiento" Type="varchar(max)" />
+    <Property Name="D_Data_id_data" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="D_PRIORIZACION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="producto_previo" Type="varchar(max)" />
+    <Property Name="nombre" Type="varchar(max)" />
+    <Property Name="secuencia" Type="float" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="integrado" Type="varchar(max)" />
+    <Property Name="id_producto" Type="varchar(max)" />
+    <Property Name="prioridad" Type="float" />
+    <Property Name="estado" Type="varchar(max)" />
+    <Property Name="avance" Type="float" />
+    <Property Name="responsable_desarrollo" Type="varchar(max)" />
+    <Property Name="responsable_informacion" Type="varchar(max)" />
+    <Property Name="tecnologia" Type="varchar(max)" />
+    <Property Name="tarea" Type="varchar(max)" />
+    <Property Name="db" Type="varchar(max)" />
+    <Property Name="plataforma" Type="varchar(max)" />
+    <Property Name="control_calidad" Type="varchar(max)" />
+    <Property Name="odoo" Type="varchar(max)" />
+    <Property Name="shopify" Type="varchar(max)" />
+    <Property Name="fecha_estimada" Type="datetime" />
+    <Property Name="fecha_actualizacion" Type="datetime" />
+    <Property Name="D_Data_id_data" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="D_PRODUCTO">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="corr_Producto" Type="bigint" />
+    <Property Name="data" Type="varchar(max)" />
+    <Property Name="pais" Type="varchar(max)" />
+    <Property Name="id_producto" Type="varchar(max)" />
+    <Property Name="producto_asociado" Type="varchar(max)" />
+    <Property Name="nombre_comercial" Type="varchar(max)" />
+    <Property Name="estado" Type="varchar(max)" />
+    <Property Name="avance" Type="float" />
+    <Property Name="responsable_desarrollo" Type="varchar(max)" />
+    <Property Name="responsable_informacion" Type="varchar(max)" />
+    <Property Name="tecnologia" Type="varchar(max)" />
+    <Property Name="host" Type="varchar(max)" />
+    <Property Name="link_odoo" Type="varchar(max)" />
+    <Property Name="fecha_publicación" Type="datetime" />
+    <Property Name="escala" Type="varchar(max)" />
+    <Property Name="periodo" Type="varchar(max)" />
+    <Property Name="actualizaciones" Type="varchar(max)" />
+    <Property Name="tipo_producto" Type="varchar(max)" />
+    <Property Name="fuentes" Type="varchar(max)" />
+    <Property Name="ref_principal" Type="varchar(max)" />
+    <Property Name="competencia" Type="varchar(max)" />
+    <Property Name="vista" Type="varchar(max)" />
+    <Property Name="repositorio_dropbox" Type="varchar(max)" />
+    <Property Name="logo" Type="varchar(max)" />
+    <Property Name="observaciones" Type="float" />
+    <Property Name="miniatura" Type="varchar(max)" />
+    <Property Name="portada_shopify" Type="varchar(max)" />
+    <Property Name="parrafo_enganche" Type="varchar(max)" />
+    <Property Name="variante_1" Type="varchar(max)" />
+    <Property Name="precio1_usd" Type="float" />
+    <Property Name="variante_2" Type="varchar(max)" />
+    <Property Name="precio2_usd" Type="float" />
+    <Property Name="variante_3" Type="varchar(max)" />
+    <Property Name="precio3_usd" Type="float" />
+    <Property Name="variable_filtro1" Type="varchar(max)" />
+    <Property Name="variable_filtro2" Type="varchar(max)" />
+    <Property Name="variable_filtro3" Type="varchar(max)" />
+    <Property Name="descripcion" Type="varchar(max)" />
+    <Property Name="CAR_tipo_prod" Type="varchar(max)" />
+    <Property Name="CAR_var1_disponible" Type="varchar(max)" />
+    <Property Name="CAR_var2_disponible" Type="varchar(max)" />
+    <Property Name="CAR_var3_disponible" Type="varchar(max)" />
+    <Property Name="CAR_periodo" Type="varchar(max)" />
+    <Property Name="CAR_proveedor" Type="varchar(max)" />
+    <Property Name="CAR_colección" Type="varchar(max)" />
+    <Property Name="ESP_tecnología" Type="varchar(max)" />
+    <Property Name="ESP_incluye" Type="varchar(max)" />
+    <Property Name="ESP_uso_disp" Type="varchar(max)" />
+    <Property Name="ESP_fuentes " Type="varchar(max)" />
+    <Property Name="ACC_recibirás" Type="varchar(max)" />
+    <Property Name="ACC_licencia_uso" Type="varchar(max)" />
+    <Property Name="ACC_actualizaciones" Type="varchar(max)" />
+    <Property Name="ACC_numero_usuarios" Type="float" />
+    <Property Name="etiquetas" Type="varchar(max)" />
+    <Property Name="D_PRIORIZACION_id_priorizacion" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="D_SHOPIFY">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="Handle" Type="varchar(max)" />
+    <Property Name="Title" Type="varchar(max)" />
+    <Property Name="Body_HTML" Type="varchar(max)" />
+    <Property Name="Vendor" Type="varchar(max)" />
+    <Property Name="Type" Type="varchar(max)" />
+    <Property Name="Tags" Type="varchar(max)" />
+    <Property Name="Published" Type="bit" />
+    <Property Name="Option1_Name" Type="varchar(max)" />
+    <Property Name="Option1_Value" Type="varchar(max)" />
+    <Property Name="Option2_Name" Type="varchar(max)" />
+    <Property Name="Option2_Value" Type="varchar(max)" />
+    <Property Name="Option3_Name" Type="varchar(max)" />
+    <Property Name="Option3_Value" Type="varchar(max)" />
+    <Property Name="Variant_SKU" Type="varchar(max)" />
+    <Property Name="Variant_Grams" Type="float" />
+    <Property Name="Variant_Inventory_Tracker" Type="varchar(max)" />
+    <Property Name="Variant_Inventory_Qty" Type="float" />
+    <Property Name="Variant_Inventory_Policy" Type="varchar(max)" />
+    <Property Name="Variant_Fulfillment_Service" Type="varchar(max)" />
+    <Property Name="Variant_Price" Type="float" />
+    <Property Name="Variant_Compare_At_Price" Type="float" />
+    <Property Name="Variant_Requires_Shipping" Type="bit" />
+    <Property Name="Variant_Taxable" Type="bit" />
+    <Property Name="Variant_Barcode" Type="float" />
+    <Property Name="Image_Src" Type="varchar(max)" />
+    <Property Name="Image_Position" Type="float" />
+    <Property Name="Image_Alt_Text" Type="float" />
+    <Property Name="Gift_Card" Type="bit" />
+    <Property Name="SEO_Title" Type="varchar(max)" />
+    <Property Name="SEO_Description" Type="varchar(max)" />
+    <Property Name="Google_Shopping_Google_Product_Category" Type="varchar(max)" />
+    <Property Name="Google_Shopping_Gender" Type="varchar(max)" />
+    <Property Name="Google_Shopping_Age_Group" Type="varchar(max)" />
+    <Property Name="Google_Shopping_MPN" Type="varchar(max)" />
+    <Property Name="Google_Shopping_AdWords_Grouping" Type="varchar(max)" />
+    <Property Name="Google_Shopping_AdWords_Labels" Type="varchar(max)" />
+    <Property Name="Google_Shopping_Condition" Type="varchar(max)" />
+    <Property Name="Google_Shopping_Custom_Product" Type="varchar(max)" />
+    <Property Name="Google_Shopping_Custom_Label_0" Type="varchar(max)" />
+    <Property Name="Google_Shopping_Custom_Label_1" Type="varchar(max)" />
+    <Property Name="Google_Shopping_Custom_Label_2" Type="varchar(max)" />
+    <Property Name="Google_Shopping_Custom_Label_3" Type="varchar(max)" />
+    <Property Name="Google_Shopping_Custom_Label_4" Type="varchar(max)" />
+    <Property Name="Variant_Image" Type="varchar(max)" />
+    <Property Name="Variant_Weight_Unit" Type="varchar(max)" />
+    <Property Name="Variant_Tax_Code" Type="varchar(max)" />
+    <Property Name="Cost_per_item" Type="float" />
+    <Property Name="Status" Type="varchar(max)" />
+    <Property Name="D_PRODUCTO_id_producto" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+  </EntityType>
+  <Association Name="D_INVESTIGACION_D_Data_FK">
+    <End Role="D_Data" Type="Self.D_Data" Multiplicity="1" />
+    <End Role="D_INVESTIGACION" Type="Self.D_INVESTIGACION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="D_Data">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="D_INVESTIGACION">
+        <PropertyRef Name="D_Data_id_data" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="D_PRIORIZACION_D_Data_FK">
+    <End Role="D_Data" Type="Self.D_Data" Multiplicity="1" />
+    <End Role="D_PRIORIZACION" Type="Self.D_PRIORIZACION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="D_Data">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="D_PRIORIZACION">
+        <PropertyRef Name="D_Data_id_data" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="D_PRODUCTO_D_PRIORIZACION_FK">
+    <End Role="D_PRIORIZACION" Type="Self.D_PRIORIZACION" Multiplicity="1" />
+    <End Role="D_PRODUCTO" Type="Self.D_PRODUCTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="D_PRIORIZACION">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="D_PRODUCTO">
+        <PropertyRef Name="D_PRIORIZACION_id_priorizacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="D_SHOPIFY_D_PRODUCTO_FK">
+    <End Role="D_PRODUCTO" Type="Self.D_PRODUCTO" Multiplicity="1" />
+    <End Role="D_SHOPIFY" Type="Self.D_SHOPIFY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="D_PRODUCTO">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="D_SHOPIFY">
+        <PropertyRef Name="D_PRODUCTO_id_producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="listaProductosModel1StoreContainer">
+    <EntitySet Name="D_Data" EntityType="Self.D_Data" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D_INVESTIGACION" EntityType="Self.D_INVESTIGACION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D_PRIORIZACION" EntityType="Self.D_PRIORIZACION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D_PRODUCTO" EntityType="Self.D_PRODUCTO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="D_SHOPIFY" EntityType="Self.D_SHOPIFY" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="D_INVESTIGACION_D_Data_FK" Association="Self.D_INVESTIGACION_D_Data_FK">
+      <End Role="D_Data" EntitySet="D_Data" />
+      <End Role="D_INVESTIGACION" EntitySet="D_INVESTIGACION" />
+    </AssociationSet>
+    <AssociationSet Name="D_PRIORIZACION_D_Data_FK" Association="Self.D_PRIORIZACION_D_Data_FK">
+      <End Role="D_Data" EntitySet="D_Data" />
+      <End Role="D_PRIORIZACION" EntitySet="D_PRIORIZACION" />
+    </AssociationSet>
+    <AssociationSet Name="D_PRODUCTO_D_PRIORIZACION_FK" Association="Self.D_PRODUCTO_D_PRIORIZACION_FK">
+      <End Role="D_PRIORIZACION" EntitySet="D_PRIORIZACION" />
+      <End Role="D_PRODUCTO" EntitySet="D_PRODUCTO" />
+    </AssociationSet>
+    <AssociationSet Name="D_SHOPIFY_D_PRODUCTO_FK" Association="Self.D_SHOPIFY_D_PRODUCTO_FK">
+      <End Role="D_PRODUCTO" EntitySet="D_PRODUCTO" />
+      <End Role="D_SHOPIFY" EntitySet="D_SHOPIFY" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

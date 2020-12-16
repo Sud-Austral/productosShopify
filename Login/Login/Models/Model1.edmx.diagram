@@ -5,8 +5,8 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="87a8b7202b9d40cbbf897ec204a9f7b1" Name="Diagram1" ZoomLevel="63" >
-        <EntityTypeShape EntityType="listaProductosModel.BD" Width="1.5" PointX="3.75" PointY="0.875" />
-        <EntityTypeShape EntityType="listaProductosModel.Data" Width="1.5" PointX="5.75" PointY="0.875" />
+        <EntityTypeShape EntityType="listaProductosModel.BD" Width="1.5" PointX="3.125" PointY="0.875" />
+        <EntityTypeShape EntityType="listaProductosModel.Data" Width="1.5" PointX="5.625" PointY="0.875" />
         <EntityTypeShape EntityType="listaProductosModel.Detalle_Productos" Width="1.5" PointX="7.75" PointY="0.875" />
         <EntityTypeShape EntityType="listaProductosModel.Investigacio" Width="1.5" PointX="3.75" PointY="5.875" />
         <EntityTypeShape EntityType="listaProductosModel.Monitoreo_Invest" Width="1.5" PointX="5.75" PointY="5.875" />

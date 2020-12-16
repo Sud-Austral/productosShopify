@@ -12,7 +12,7 @@ namespace Login.Controllers
 {
     public class D_INVESTIGACIONController : Controller
     {
-        private listaProductosEntities1 db = new listaProductosEntities1();
+        private listaProductosOriginal db = new listaProductosOriginal();
 
         // GET: D_INVESTIGACION
         public ActionResult Index()
@@ -44,8 +44,8 @@ namespace Login.Controllers
         }
 
         // POST: D_INVESTIGACION/Create
-        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
-        // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
+        // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "id,numero,tema,responsable,fecha_inicio,fecha_avance,fecha_termino,comentario,accion,seguimiento,D_Data_id_data")] D_INVESTIGACION d_INVESTIGACION)
@@ -78,8 +78,8 @@ namespace Login.Controllers
         }
 
         // POST: D_INVESTIGACION/Edit/5
-        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
-        // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
+        // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "id,numero,tema,responsable,fecha_inicio,fecha_avance,fecha_termino,comentario,accion,seguimiento,D_Data_id_data")] D_INVESTIGACION d_INVESTIGACION)

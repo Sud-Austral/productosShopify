@@ -12,7 +12,7 @@ namespace Login.Controllers
 {
     public class D_PRODUCTOController : Controller
     {
-        private listaProductosEntities1 db = new listaProductosEntities1();
+        private listaProductosOriginal db = new listaProductosOriginal();
 
         // GET: D_PRODUCTO
         public ActionResult Index()
@@ -44,8 +44,8 @@ namespace Login.Controllers
         }
 
         // POST: D_PRODUCTO/Create
-        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
-        // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
+        // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "id,corr_Producto,data,pais,id_producto,producto_asociado,nombre_comercial,estado,avance,responsable_desarrollo,responsable_informacion,tecnologia,host,link_odoo,fecha_publicación,escala,periodo,actualizaciones,tipo_producto,fuentes,ref_principal,competencia,vista,repositorio_dropbox,logo,observaciones,miniatura,portada_shopify,parrafo_enganche,variante_1,precio1_usd,variante_2,precio2_usd,variante_3,precio3_usd,variable_filtro1,variable_filtro2,variable_filtro3,descripcion,CAR_tipo_prod,CAR_var1_disponible,CAR_var2_disponible,CAR_var3_disponible,CAR_periodo,CAR_proveedor,CAR_colección,ESP_tecnología,ESP_incluye,ESP_uso_disp,ESP_fuentes_,ACC_recibirás,ACC_licencia_uso,ACC_actualizaciones,ACC_numero_usuarios,etiquetas,D_PRIORIZACION_id_priorizacion")] D_PRODUCTO d_PRODUCTO)
@@ -78,8 +78,8 @@ namespace Login.Controllers
         }
 
         // POST: D_PRODUCTO/Edit/5
-        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
-        // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
+        // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "id,corr_Producto,data,pais,id_producto,producto_asociado,nombre_comercial,estado,avance,responsable_desarrollo,responsable_informacion,tecnologia,host,link_odoo,fecha_publicación,escala,periodo,actualizaciones,tipo_producto,fuentes,ref_principal,competencia,vista,repositorio_dropbox,logo,observaciones,miniatura,portada_shopify,parrafo_enganche,variante_1,precio1_usd,variante_2,precio2_usd,variante_3,precio3_usd,variable_filtro1,variable_filtro2,variable_filtro3,descripcion,CAR_tipo_prod,CAR_var1_disponible,CAR_var2_disponible,CAR_var3_disponible,CAR_periodo,CAR_proveedor,CAR_colección,ESP_tecnología,ESP_incluye,ESP_uso_disp,ESP_fuentes_,ACC_recibirás,ACC_licencia_uso,ACC_actualizaciones,ACC_numero_usuarios,etiquetas,D_PRIORIZACION_id_priorizacion")] D_PRODUCTO d_PRODUCTO)

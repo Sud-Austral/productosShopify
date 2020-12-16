@@ -12,7 +12,7 @@ namespace Login.Controllers
 {
     public class D_DataController : Controller
     {
-        private listaProductosEntities1 db = new listaProductosEntities1();
+        private listaProductosOriginal db = new listaProductosOriginal();
 
         // GET: D_Data
         public ActionResult Index()
@@ -42,8 +42,8 @@ namespace Login.Controllers
         }
 
         // POST: D_Data/Create
-        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
-        // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
+        // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "id,data,id_data,estado,desarrollo,investigacion,descripcion,slogan,vista,repositorio_dropbox,logo")] D_Data d_Data)
@@ -74,8 +74,8 @@ namespace Login.Controllers
         }
 
         // POST: D_Data/Edit/5
-        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
-        // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
+        // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "id,data,id_data,estado,desarrollo,investigacion,descripcion,slogan,vista,repositorio_dropbox,logo")] D_Data d_Data)

@@ -12,7 +12,7 @@ namespace Login.Controllers
 {
     public class D_PRIORIZACIONController : Controller
     {
-        private listaProductosEntities1 db = new listaProductosEntities1();
+        private listaProductosOriginal db = new listaProductosOriginal();
 
         // GET: D_PRIORIZACION
         public ActionResult Index()
@@ -44,8 +44,8 @@ namespace Login.Controllers
         }
 
         // POST: D_PRIORIZACION/Create
-        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
-        // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
+        // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "id,producto_previo,nombre,secuencia,pais,integrado,id_producto,prioridad,estado,avance,responsable_desarrollo,responsable_informacion,tecnologia,tarea,db,plataforma,control_calidad,odoo,shopify,fecha_estimada,fecha_actualizacion,D_Data_id_data")] D_PRIORIZACION d_PRIORIZACION)
@@ -78,8 +78,8 @@ namespace Login.Controllers
         }
 
         // POST: D_PRIORIZACION/Edit/5
-        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
-        // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
+        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
+        // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "id,producto_previo,nombre,secuencia,pais,integrado,id_producto,prioridad,estado,avance,responsable_desarrollo,responsable_informacion,tecnologia,tarea,db,plataforma,control_calidad,odoo,shopify,fecha_estimada,fecha_actualizacion,D_Data_id_data")] D_PRIORIZACION d_PRIORIZACION)

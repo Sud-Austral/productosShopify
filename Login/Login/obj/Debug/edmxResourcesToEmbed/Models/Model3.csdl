@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="listaProductosModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="D_Data">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="desarrollo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="investigacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="slogan" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="vista" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="repositorio_dropbox" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="logo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="D_INVESTIGACION" Relationship="Self.D_INVESTIGACION_D_Data_FK" FromRole="D_Data" ToRole="D_INVESTIGACION" />
+    <NavigationProperty Name="D_PRIORIZACION" Relationship="Self.D_PRIORIZACION_D_Data_FK" FromRole="D_Data" ToRole="D_PRIORIZACION" />
+  </EntityType>
+  <EntityType Name="D_INVESTIGACION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="numero" Type="Double" />
+    <Property Name="tema" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="responsable" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_inicio" Type="DateTime" Precision="3" />
+    <Property Name="fecha_avance" Type="DateTime" Precision="3" />
+    <Property Name="fecha_termino" Type="DateTime" Precision="3" />
+    <Property Name="comentario" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="accion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="seguimiento" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="D_Data_id_data" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <NavigationProperty Name="D_Data" Relationship="Self.D_INVESTIGACION_D_Data_FK" FromRole="D_INVESTIGACION" ToRole="D_Data" />
+  </EntityType>
+  <EntityType Name="D_PRIORIZACION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="producto_previo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="secuencia" Type="Double" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="integrado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="prioridad" Type="Double" />
+    <Property Name="estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="avance" Type="Double" />
+    <Property Name="responsable_desarrollo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="responsable_informacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tecnologia" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tarea" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="db" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="plataforma" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="control_calidad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="odoo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="shopify" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_estimada" Type="DateTime" Precision="3" />
+    <Property Name="fecha_actualizacion" Type="DateTime" Precision="3" />
+    <Property Name="D_Data_id_data" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <NavigationProperty Name="D_Data" Relationship="Self.D_PRIORIZACION_D_Data_FK" FromRole="D_PRIORIZACION" ToRole="D_Data" />
+    <NavigationProperty Name="D_PRODUCTO" Relationship="Self.D_PRODUCTO_D_PRIORIZACION_FK" FromRole="D_PRIORIZACION" ToRole="D_PRODUCTO" />
+  </EntityType>
+  <EntityType Name="D_PRODUCTO">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="corr_Producto" Type="Int64" />
+    <Property Name="data" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="id_producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="producto_asociado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="nombre_comercial" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="avance" Type="Double" />
+    <Property Name="responsable_desarrollo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="responsable_informacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tecnologia" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="host" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="link_odoo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_publicación" Type="DateTime" Precision="3" />
+    <Property Name="escala" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="periodo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="actualizaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="tipo_producto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="fuentes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ref_principal" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="competencia" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="vista" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="repositorio_dropbox" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="logo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="observaciones" Type="Double" />
+    <Property Name="miniatura" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="portada_shopify" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="parrafo_enganche" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="variante_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="precio1_usd" Type="Double" />
+    <Property Name="variante_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="precio2_usd" Type="Double" />
+    <Property Name="variante_3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="precio3_usd" Type="Double" />
+    <Property Name="variable_filtro1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="variable_filtro2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="variable_filtro3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_tipo_prod" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_var1_disponible" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_var2_disponible" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_var3_disponible" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_periodo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_proveedor" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CAR_colección" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ESP_tecnología" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ESP_incluye" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ESP_uso_disp" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ESP_fuentes_" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ACC_recibirás" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ACC_licencia_uso" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ACC_actualizaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ACC_numero_usuarios" Type="Double" />
+    <Property Name="etiquetas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="D_PRIORIZACION_id_priorizacion" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <NavigationProperty Name="D_PRIORIZACION" Relationship="Self.D_PRODUCTO_D_PRIORIZACION_FK" FromRole="D_PRODUCTO" ToRole="D_PRIORIZACION" />
+    <NavigationProperty Name="D_SHOPIFY" Relationship="Self.D_SHOPIFY_D_PRODUCTO_FK" FromRole="D_PRODUCTO" ToRole="D_SHOPIFY" />
+  </EntityType>
+  <EntityType Name="D_SHOPIFY">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="Handle" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Body_HTML" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Vendor" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Tags" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Published" Type="Boolean" />
+    <Property Name="Option1_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Option1_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Option2_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Option2_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Option3_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Option3_Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variant_SKU" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variant_Grams" Type="Double" />
+    <Property Name="Variant_Inventory_Tracker" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variant_Inventory_Qty" Type="Double" />
+    <Property Name="Variant_Inventory_Policy" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variant_Fulfillment_Service" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variant_Price" Type="Double" />
+    <Property Name="Variant_Compare_At_Price" Type="Double" />
+    <Property Name="Variant_Requires_Shipping" Type="Boolean" />
+    <Property Name="Variant_Taxable" Type="Boolean" />
+    <Property Name="Variant_Barcode" Type="Double" />
+    <Property Name="Image_Src" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Image_Position" Type="Double" />
+    <Property Name="Image_Alt_Text" Type="Double" />
+    <Property Name="Gift_Card" Type="Boolean" />
+    <Property Name="SEO_Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SEO_Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Google_Shopping_Google_Product_Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Google_Shopping_Gender" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Google_Shopping_Age_Group" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Google_Shopping_MPN" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Google_Shopping_AdWords_Grouping" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Google_Shopping_AdWords_Labels" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Google_Shopping_Condition" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Google_Shopping_Custom_Product" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Google_Shopping_Custom_Label_0" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Google_Shopping_Custom_Label_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Google_Shopping_Custom_Label_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Google_Shopping_Custom_Label_3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Google_Shopping_Custom_Label_4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variant_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variant_Weight_Unit" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Variant_Tax_Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Cost_per_item" Type="Double" />
+    <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="D_PRODUCTO_id_producto" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+    <NavigationProperty Name="D_PRODUCTO" Relationship="Self.D_SHOPIFY_D_PRODUCTO_FK" FromRole="D_SHOPIFY" ToRole="D_PRODUCTO" />
+  </EntityType>
+  <Association Name="D_INVESTIGACION_D_Data_FK">
+    <End Role="D_Data" Type="Self.D_Data" Multiplicity="1" />
+    <End Role="D_INVESTIGACION" Type="Self.D_INVESTIGACION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="D_Data">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="D_INVESTIGACION">
+        <PropertyRef Name="D_Data_id_data" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="D_PRIORIZACION_D_Data_FK">
+    <End Role="D_Data" Type="Self.D_Data" Multiplicity="1" />
+    <End Role="D_PRIORIZACION" Type="Self.D_PRIORIZACION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="D_Data">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="D_PRIORIZACION">
+        <PropertyRef Name="D_Data_id_data" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="D_PRODUCTO_D_PRIORIZACION_FK">
+    <End Role="D_PRIORIZACION" Type="Self.D_PRIORIZACION" Multiplicity="1" />
+    <End Role="D_PRODUCTO" Type="Self.D_PRODUCTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="D_PRIORIZACION">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="D_PRODUCTO">
+        <PropertyRef Name="D_PRIORIZACION_id_priorizacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="D_SHOPIFY_D_PRODUCTO_FK">
+    <End Role="D_PRODUCTO" Type="Self.D_PRODUCTO" Multiplicity="1" />
+    <End Role="D_SHOPIFY" Type="Self.D_SHOPIFY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="D_PRODUCTO">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="D_SHOPIFY">
+        <PropertyRef Name="D_PRODUCTO_id_producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="listaProductosOriginal" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="D_Data" EntityType="Self.D_Data" />
+    <EntitySet Name="D_INVESTIGACION" EntityType="Self.D_INVESTIGACION" />
+    <EntitySet Name="D_PRIORIZACION" EntityType="Self.D_PRIORIZACION" />
+    <EntitySet Name="D_PRODUCTO" EntityType="Self.D_PRODUCTO" />
+    <EntitySet Name="D_SHOPIFY" EntityType="Self.D_SHOPIFY" />
+    <AssociationSet Name="D_INVESTIGACION_D_Data_FK" Association="Self.D_INVESTIGACION_D_Data_FK">
+      <End Role="D_Data" EntitySet="D_Data" />
+      <End Role="D_INVESTIGACION" EntitySet="D_INVESTIGACION" />
+    </AssociationSet>
+    <AssociationSet Name="D_PRIORIZACION_D_Data_FK" Association="Self.D_PRIORIZACION_D_Data_FK">
+      <End Role="D_Data" EntitySet="D_Data" />
+      <End Role="D_PRIORIZACION" EntitySet="D_PRIORIZACION" />
+    </AssociationSet>
+    <AssociationSet Name="D_PRODUCTO_D_PRIORIZACION_FK" Association="Self.D_PRODUCTO_D_PRIORIZACION_FK">
+      <End Role="D_PRIORIZACION" EntitySet="D_PRIORIZACION" />
+      <End Role="D_PRODUCTO" EntitySet="D_PRODUCTO" />
+    </AssociationSet>
+    <AssociationSet Name="D_SHOPIFY_D_PRODUCTO_FK" Association="Self.D_SHOPIFY_D_PRODUCTO_FK">
+      <End Role="D_PRODUCTO" EntitySet="D_PRODUCTO" />
+      <End Role="D_SHOPIFY" EntitySet="D_SHOPIFY" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

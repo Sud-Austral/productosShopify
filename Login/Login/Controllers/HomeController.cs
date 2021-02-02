@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Login.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -24,6 +25,13 @@ namespace Login.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult D_DataInsertador()
+        {
+            Data_Traductor.InsetarDatos();
+            Investigacion_Traductor.InsetarDatos();
             return View();
         }
     }

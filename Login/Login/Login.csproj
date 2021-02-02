@@ -213,6 +213,7 @@
     <Compile Include="Models\Data.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Data_Traductor.cs" />
     <Compile Include="Models\Detalle_Productos.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -235,6 +236,7 @@
     <Compile Include="Models\Investigacio.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Investigacion_Traductor.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -278,6 +280,8 @@
     <Compile Include="Models\Prioridad.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Prioridad_Traductor.cs" />
+    <Compile Include="Models\Priorizacion_Traductor.cs" />
     <Compile Include="Models\Producto.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -568,6 +572,7 @@
     <Content Include="Views\D_SHOPIFY\Details.cshtml" />
     <Content Include="Views\D_SHOPIFY\Edit.cshtml" />
     <Content Include="Views\D_SHOPIFY\Index.cshtml" />
+    <Content Include="Views\Home\D_DataInsertador.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
